@@ -1,0 +1,105 @@
+{
+ "canonical_id": "AR_TAX_0009",
+ "blueprint_id": "AR_TAX_BP_0009",
+ "provenance_class": "taxonomy_only",
+ "governing_rulings": [
+  "docs/patches/TAXONOMY_SUPPLEMENT_RULINGS_V1.md",
+  "docs/patches/DIFFICULTY_EVIDENCE_RULINGS_V1.md"
+ ],
+ "content_state": "human_accepted_prepublication",
+ "publication_state": "unpublished",
+ "question_type": "MSS",
+ "difficulty": 4,
+ "difficulty_status": "prepublication_expert_calibrated",
+ "normalized_recipe_id": "MSS_SUPPORTED",
+ "recipe_title": "Draw the Best-Supported Claim",
+ "scenario": "agricultural regulation",
+ "stimulus": "Agricultural bulletin: Most of the orchards in the Calder Valley, a region long known for its fruit exports, are certified organic. Every certified-organic orchard, whatever its size or output, is inspected annually by the agricultural board. And under the reporting regulation the province adopted this spring, no orchard that the board inspects annually is exempt from the new pesticide-reporting rule, regardless of what it grows.",
+ "question_stem": "Which one of the following is most strongly supported by the statements above?",
+ "choice_a": "Most of the orchards in the Calder Valley are not inspected annually by the agricultural board.",
+ "choice_b": "No orchard in the Calder Valley is exempt from the new pesticide-reporting rule.",
+ "choice_c": "Most of the orchards in the Calder Valley are not exempt from the new pesticide-reporting rule.",
+ "choice_d": "Most of the orchards that the agricultural board inspects annually are in the Calder Valley.",
+ "choice_e": "Any orchard that is not inspected annually by the agricultural board is not in the Calder Valley.",
+ "correct_answer": "C",
+ "prediction_text": "Chain the quantifiers: most Valley orchards are organic; organic means inspected; inspected means not exempt. So most Valley orchards are not exempt.",
+ "trap_a": "reverses what the statements support (survivor)",
+ "trap_b": "stronger than the premises license (survivor)",
+ "trap_c": null,
+ "trap_d": "illicitly converts the direction of the chain",
+ "trap_e": "treats most as all and contraposes",
+ "trap_family_a": "Direction Failure",
+ "trap_family_b": "Scope Failure",
+ "trap_family_c": null,
+ "trap_family_d": "Inference Failure",
+ "trap_family_e": "Conditional Failure",
+ "explanation_a": "The statements support the opposite: the organic majority is inspected, so most Valley orchards are inspected.",
+ "explanation_b": "Orchards outside the organic majority might be exempt; nothing rules that out, so the universal claim overreaches.",
+ "explanation_c": "Correct. The organic majority is inspected, and inspected orchards are not exempt; so most Valley orchards are not exempt.",
+ "explanation_d": "The premises say nothing about how many inspected orchards lie in the Valley; the chain does not convert.",
+ "explanation_e": "Only most Valley orchards are organic, so an uninspected orchard could still be in the Valley.",
+ "authoring_record": {
+  "method": "source_isolated_ai_assisted_draft_human_accepted",
+  "ai_assistance": true,
+  "ai_drafter": "Claude (governor session, v43)",
+  "inputs": [
+   "db/seeds/0001_trap_taxonomy_seed.sql",
+   "db/seeds/0002_recipes_seed.sql",
+   "docs/patches/CONTENT_DIFFICULTY_CALIBRATION_V1.md",
+   "data/supplemental_taxonomy/AR_TAX_BP_0009.json"
+  ],
+  "no_source_consulted": "No source question surface (original_bank, june2007, pt86, or any other LSAT item) was opened, read, or consulted in drafting. No bank item prose was examined.",
+  "responsible_human_acceptance": "ACCEPTED - operator (Ben), 2026-07-16, docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-3"
+ },
+ "drafter_self_qa": {
+  "disclosed": "Drafter self-QA is NOT blind (author context); it satisfies no D2 evidence requirement.",
+  "stimulus_wordcount": 65,
+  "moving_parts_claimed": 4,
+  "expected_blind_solve_survivors": [
+   "A",
+   "B"
+  ]
+ },
+ "formal_core_instantiation": {
+  "mapping": {
+   "F": "orchards in the Calder Valley",
+   "G": "certified organic",
+   "H": "inspected annually by the agricultural board",
+   "J": "exempt from the new pesticide-reporting rule"
+  },
+  "choice_to_form": {
+   "A": "D1: Most F are not H",
+   "B": "D2: No F are J",
+   "C": "credited C: Most F are not J",
+   "D": "D3: Most H are F",
+   "E": "D4: all non-H are non-F"
+  },
+  "rerun_required": "A3 re-run against this mapping (R2)"
+ },
+ "adjudication_ref": "adjudication_record_v1.json",
+ "difficulty_evidence_limitation": "See adjudication_record_v1.json: provisional expert calibration; empirical confirmation after beta required; not psychometrically validated.",
+ "completed_human_stages": {
+  "A5": "ACCEPT (2026-07-16)",
+  "A6": "PASS (2026-07-16)",
+  "A7": "label retained (2026-07-16)"
+ },
+ "next_gates": [
+  "A8 reconciliation fold (operator instruction required)",
+  "A9 attestation",
+  "A10 refused"
+ ],
+ "adjudication": {
+  "a5": "ACCEPT",
+  "a6": "PASS",
+  "a7_label": 4,
+  "difficulty_status": "prepublication_expert_calibrated",
+  "finding": "not_one_level_easier: NOT_AFFIRMED - waived for beta by operator ruling; folded into empirical-confirmation obligation (AD-5)",
+  "limitations": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-6",
+  "record": "adjudication_records_v1.json"
+ },
+ "remaining_gates": {
+  "A8": "provenance recording at import (reconciliation ledger untouched by adjudication)",
+  "A9": "Spec 07 section 9 human attestation",
+  "A10": "publication refused pending Spec 07 approval + publication authorization + beta-assembly gates"
+ }
+}

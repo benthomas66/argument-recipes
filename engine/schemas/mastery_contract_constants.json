@@ -1,0 +1,15 @@
+{
+  "algorithm_version": "mvp_rule_v1",
+  "initial_score": 0.5,
+  "correct_delta": 0.06,
+  "wrong_recipe_delta": -0.08,
+  "wrong_trap_delta": -0.10,
+  "band_weak_below": 0.40,
+  "band_developing_below": 0.70,
+  "band_stable_below": 0.85,
+  "mastered_min_attempts": 5,
+  "mastered_min_recent_accuracy": 0.80,
+  "review_intervals_days": [1, 3, 7, 21],
+  "dimension_types": ["recipe", "trap_family", "question_type", "difficulty"],
+  "statuses": ["new", "weak", "developing", "stable", "mastered", "decayed"]
+}

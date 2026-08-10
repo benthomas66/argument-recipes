@@ -1,0 +1,9 @@
+{
+  "daily_repair_mix": [
+    { "slot": "warmup", "count": 2 },
+    { "slot": "targeted_recipe", "count": 5 },
+    { "slot": "trap_repair", "count": 2 },
+    { "slot": "review", "count": 1 }
+  ],
+  "warmup_target_bands": ["stable", "developing"]
+}

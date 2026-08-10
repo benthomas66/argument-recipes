@@ -1,0 +1,143 @@
+{
+  "run_id": "AR_V1_FULL200_20260708T014500Z_c7d41a2b",
+  "item_count": 200,
+  "reissue": "post-defect-fix: 5 second variants re-authored (see reauthored_items in sibling_divergence_all200.json)",
+  "contract_note": "validate_generated_items and validate_content_package are PER-BATCH validators (manifest run_id must match ^AR_V1_B\\d{2,}_...; canonical_id range is batch-scoped). A single 200-item run of those two is not producible without editing protected schemas/validators, which was not done. Their consolidated result is the union of the ten contract-conformant per-batch runs. validate_source_safety and validate_workbook_csv_parity are path-based and WERE run against the merged 200-item artifacts.",
+  "per_batch": [
+    {
+      "batch": 1,
+      "items": 20,
+      "validate_generated_items_blocking": 0,
+      "source_safety_blocking": 0,
+      "workbook_csv_parity_pass": true,
+      "content_package_blocking": 0,
+      "create_import_package_refused": false,
+      "import_target": "content_items_staging",
+      "import_dry_run_pass": true
+    },
+    {
+      "batch": 2,
+      "items": 20,
+      "validate_generated_items_blocking": 0,
+      "source_safety_blocking": 0,
+      "workbook_csv_parity_pass": true,
+      "content_package_blocking": 0,
+      "create_import_package_refused": false,
+      "import_target": "content_items_staging",
+      "import_dry_run_pass": true
+    },
+    {
+      "batch": 3,
+      "items": 20,
+      "validate_generated_items_blocking": 0,
+      "source_safety_blocking": 0,
+      "workbook_csv_parity_pass": true,
+      "content_package_blocking": 0,
+      "create_import_package_refused": false,
+      "import_target": "content_items_staging",
+      "import_dry_run_pass": true
+    },
+    {
+      "batch": 4,
+      "items": 20,
+      "validate_generated_items_blocking": 0,
+      "source_safety_blocking": 0,
+      "workbook_csv_parity_pass": true,
+      "content_package_blocking": 0,
+      "create_import_package_refused": false,
+      "import_target": "content_items_staging",
+      "import_dry_run_pass": true
+    },
+    {
+      "batch": 5,
+      "items": 20,
+      "validate_generated_items_blocking": 0,
+      "source_safety_blocking": 0,
+      "workbook_csv_parity_pass": true,
+      "content_package_blocking": 0,
+      "create_import_package_refused": false,
+      "import_target": "content_items_staging",
+      "import_dry_run_pass": true
+    },
+    {
+      "batch": 6,
+      "items": 20,
+      "validate_generated_items_blocking": 0,
+      "source_safety_blocking": 0,
+      "workbook_csv_parity_pass": true,
+      "content_package_blocking": 0,
+      "create_import_package_refused": false,
+      "import_target": "content_items_staging",
+      "import_dry_run_pass": true
+    },
+    {
+      "batch": 7,
+      "items": 20,
+      "validate_generated_items_blocking": 0,
+      "source_safety_blocking": 0,
+      "workbook_csv_parity_pass": true,
+      "content_package_blocking": 0,
+      "create_import_package_refused": false,
+      "import_target": "content_items_staging",
+      "import_dry_run_pass": true
+    },
+    {
+      "batch": 8,
+      "items": 20,
+      "validate_generated_items_blocking": 0,
+      "source_safety_blocking": 0,
+      "workbook_csv_parity_pass": true,
+      "content_package_blocking": 0,
+      "create_import_package_refused": false,
+      "import_target": "content_items_staging",
+      "import_dry_run_pass": true
+    },
+    {
+      "batch": 9,
+      "items": 20,
+      "validate_generated_items_blocking": 0,
+      "source_safety_blocking": 0,
+      "workbook_csv_parity_pass": true,
+      "content_package_blocking": 0,
+      "create_import_package_refused": false,
+      "import_target": "content_items_staging",
+      "import_dry_run_pass": true
+    },
+    {
+      "batch": 10,
+      "items": 20,
+      "validate_generated_items_blocking": 0,
+      "source_safety_blocking": 0,
+      "workbook_csv_parity_pass": true,
+      "content_package_blocking": 0,
+      "create_import_package_refused": false,
+      "import_target": "content_items_staging",
+      "import_dry_run_pass": true
+    }
+  ],
+  "aggregate": {
+    "validate_generated_items_total_blocking": 0,
+    "source_safety_total_blocking": 0,
+    "workbook_csv_parity_all_pass": true,
+    "content_package_total_blocking": 0,
+    "create_import_package_any_refused": false,
+    "import_targets": [
+      "content_items_staging"
+    ],
+    "import_dry_run_all_pass": true,
+    "rows_validated": 200
+  },
+  "merged_file_runs": {
+    "validate_source_safety_merged_blocking": 0,
+    "workbook_csv_parity_merged_pass": true
+  },
+  "gate_set": {
+    "g1..g5": "per-item calibration, 200/200",
+    "g6_length_tracks_source": "per-item, B7-B10",
+    "g7_sibling_divergence": "run-level, 45 pairs, 0 failures"
+  },
+  "repo_baseline": {
+    "json_schema_files": "22 validated",
+    "pytest": "46 passed"
+  }
+}

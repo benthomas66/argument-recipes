@@ -1,0 +1,186 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Argument Recipes Validation Report",
+  "type": "object",
+  "required": [
+    "spec_version",
+    "run_id",
+    "batch_number",
+    "source_bank_hash",
+    "output_prefix",
+    "row_count_expected",
+    "row_count_actual",
+    "unused_planned_ids",
+    "schema_validation_pass",
+    "answer_distribution_pass",
+    "explanation_alignment_pass",
+    "trap_alignment_pass",
+    "status_permission_pass",
+    "status_authority_pass",
+    "id_range_pass",
+    "manifest_alignment_pass",
+    "source_safety_pass",
+    "source_safety_notes",
+    "near_copy_status_pass",
+    "workbook_csv_parity_pass",
+    "import_package_pass",
+    "blocking_failures",
+    "recoverable_holds",
+    "validation_notes"
+  ],
+  "properties": {
+    "spec_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "batch_number": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "source_bank_hash": {
+      "type": "string",
+      "minLength": 1
+    },
+    "output_prefix": {
+      "type": "string",
+      "minLength": 1
+    },
+    "row_count_expected": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "row_count_actual": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "unused_planned_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "schema_validation_pass": {
+      "type": "boolean"
+    },
+    "answer_distribution_pass": {
+      "type": "boolean"
+    },
+    "explanation_alignment_pass": {
+      "type": "boolean"
+    },
+    "trap_alignment_pass": {
+      "type": "boolean"
+    },
+    "status_permission_pass": {
+      "type": "boolean"
+    },
+    "status_authority_pass": {
+      "type": "boolean"
+    },
+    "id_range_pass": {
+      "type": "boolean"
+    },
+    "manifest_alignment_pass": {
+      "type": "boolean"
+    },
+    "source_safety_pass": {
+      "type": "boolean"
+    },
+    "source_safety_notes": {
+      "type": "string"
+    },
+    "near_copy_status_pass": {
+      "type": "boolean"
+    },
+    "workbook_csv_parity_pass": {
+      "type": "boolean"
+    },
+    "import_package_pass": {
+      "type": "boolean"
+    },
+    "blocking_failures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "code",
+          "message",
+          "severity"
+        ],
+        "properties": {
+          "code": {
+            "type": "string",
+            "minLength": 1
+          },
+          "message": {
+            "type": "string",
+            "minLength": 1
+          },
+          "severity": {
+            "enum": [
+              "blocking",
+              "recoverable",
+              "warning"
+            ]
+          },
+          "path": {
+            "type": "string"
+          },
+          "row": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "recoverable_holds": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "code",
+          "message",
+          "severity"
+        ],
+        "properties": {
+          "code": {
+            "type": "string",
+            "minLength": 1
+          },
+          "message": {
+            "type": "string",
+            "minLength": 1
+          },
+          "severity": {
+            "enum": [
+              "blocking",
+              "recoverable",
+              "warning"
+            ]
+          },
+          "path": {
+            "type": "string"
+          },
+          "row": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "validation_notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

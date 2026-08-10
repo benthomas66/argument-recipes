@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Repair Log Row",
+  "type": "object",
+  "required": [
+    "canonical_id",
+    "repair_performed",
+    "repair_type",
+    "before_summary",
+    "after_summary",
+    "repair_risk_level",
+    "final_status"
+  ],
+  "properties": {
+    "canonical_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "repair_performed": {
+      "type": "boolean"
+    },
+    "repair_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "before_summary": {
+      "type": "string"
+    },
+    "after_summary": {
+      "type": "string"
+    },
+    "repair_risk_level": {
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "final_status": {
+      "enum": [
+        "production_factory_pass_not_human_validated",
+        "needs_logic_repair",
+        "hold_minor_review",
+        "hold_surface_review",
+        "blueprint_needs_repair",
+        "source_decode_needs_review",
+        "human_gate_validated_not_published",
+        "blocked_missing_source",
+        "blocked_export_failure",
+        "blocked_schema_failure"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,485 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Taxonomy-Only Blueprint",
+ "description": "Blueprint for provenance_class=taxonomy_only supplemental items (TAXONOMY_SUPPLEMENT_RULINGS_V1; DIFFICULTY_EVIDENCE_RULINGS_V1 R6). Deliberately contains no source_question_number: taxonomy_only items have no source and none may be fabricated (Spec 07 s3.1, s6.6). The source-derived schemas/normalized_blueprints_schema.json is unchanged.",
+ "type": "object",
+ "required": [
+  "blueprint_id",
+  "reserved_item_id",
+  "provenance_class",
+  "governing_ruling",
+  "packet",
+  "cell",
+  "recipe",
+  "credited_answer_job",
+  "argument_form",
+  "trap_plan",
+  "trap_plan_constraints",
+  "structural_spec",
+  "taxonomy_basis",
+  "authoring",
+  "difficulty_evidence_plan",
+  "prohibited_now"
+ ],
+ "properties": {
+  "blueprint_id": {
+   "type": "string",
+   "pattern": "^AR_TAX_BP_[0-9]{4}$"
+  },
+  "reserved_item_id": {
+   "type": "string",
+   "pattern": "^AR_TAX_[0-9]{4}$"
+  },
+  "provenance_class": {
+   "const": "taxonomy_only"
+  },
+  "governing_ruling": {
+   "type": "string",
+   "minLength": 1
+  },
+  "packet": {
+   "type": "string",
+   "minLength": 1
+  },
+  "cell": {
+   "type": "object",
+   "required": [
+    "question_type",
+    "target_difficulty"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "question_type": {
+     "enum": [
+      "EV",
+      "FL",
+      "MBT",
+      "MC",
+      "MR",
+      "MSS",
+      "NA",
+      "PA",
+      "PF",
+      "PI",
+      "PR",
+      "RC",
+      "RP",
+      "SA",
+      "ST",
+      "WK"
+     ]
+    },
+    "target_difficulty": {
+     "type": "integer",
+     "minimum": 1,
+     "maximum": 5
+    }
+   }
+  },
+  "recipe": {
+   "type": "object",
+   "required": [
+    "recipe_id",
+    "recipe_title",
+    "seed_row"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "recipe_id": {
+     "type": "string",
+     "minLength": 1
+    },
+    "recipe_title": {
+     "type": "string",
+     "minLength": 1
+    },
+    "seed_row": {
+     "type": "string",
+     "minLength": 1
+    }
+   }
+  },
+  "credited_answer_job": {
+   "type": "string",
+   "minLength": 1
+  },
+  "argument_form": {
+   "type": "string",
+   "minLength": 1
+  },
+  "trap_plan": {
+   "type": "array",
+   "minItems": 4,
+   "maxItems": 4,
+   "items": {
+    "type": "object",
+    "required": [
+     "slot",
+     "trap_family",
+     "mechanism",
+     "blind_solve_survivor",
+     "seed_row"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "slot": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 4
+     },
+     "trap_family": {
+      "enum": [
+       "Scope Failure",
+       "Direction Failure",
+       "Inference Failure",
+       "Role Failure",
+       "Conclusion Failure",
+       "Form Failure",
+       "Conditional Failure",
+       "Misdescription",
+       "Resolve Failure",
+       "Structure Failure",
+       "Parallel Failure",
+       "Principle Failure",
+       "Relevance Failure",
+       "Causal Failure",
+       "Dispute Failure",
+       "Analogy Failure",
+       "Method Failure",
+       "Comparison Failure",
+       "Evidence Failure",
+       "Language Failure"
+      ]
+     },
+     "mechanism": {
+      "type": "string",
+      "minLength": 1
+     },
+     "blind_solve_survivor": {
+      "type": "boolean"
+     },
+     "seed_row": {
+      "type": "string",
+      "minLength": 1
+     }
+    }
+   }
+  },
+  "trap_plan_constraints": {
+   "type": "object",
+   "required": [
+    "same_family_attractive_min",
+    "eliminable_max",
+    "blind_solve_survivors_min"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "same_family_attractive_min": {
+     "type": "integer",
+     "minimum": 3
+    },
+    "eliminable_max": {
+     "type": "integer",
+     "maximum": 1
+    },
+    "blind_solve_survivors_min": {
+     "type": "integer",
+     "minimum": 0
+    }
+   }
+  },
+  "structural_spec": {
+   "type": "object",
+   "required": [
+    "moving_parts_min",
+    "stimulus_length_band",
+    "word_floor",
+    "reasoning_density",
+    "standard"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "moving_parts_min": {
+     "type": "integer",
+     "minimum": 3
+    },
+    "stimulus_length_band": {
+     "enum": [
+      "short",
+      "medium",
+      "long"
+     ]
+    },
+    "word_floor": {
+     "type": "integer",
+     "minimum": 45
+    },
+    "reasoning_density": {
+     "enum": [
+      "moderate",
+      "high"
+     ]
+    },
+    "standard": {
+     "type": "string",
+     "minLength": 1
+    },
+    "first_principles_d3_frame": {
+     "type": "string",
+     "minLength": 1
+    }
+   }
+  },
+  "taxonomy_basis": {
+   "type": "object",
+   "required": [
+    "recipe_rows",
+    "trap_rows"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "recipe_rows": {
+     "type": "array",
+     "minItems": 1,
+     "items": {
+      "type": "string",
+      "minLength": 1
+     }
+    },
+    "trap_rows": {
+     "type": "array",
+     "minItems": 4,
+     "maxItems": 4,
+     "items": {
+      "enum": [
+       "Scope Failure",
+       "Direction Failure",
+       "Inference Failure",
+       "Role Failure",
+       "Conclusion Failure",
+       "Form Failure",
+       "Conditional Failure",
+       "Misdescription",
+       "Resolve Failure",
+       "Structure Failure",
+       "Parallel Failure",
+       "Principle Failure",
+       "Relevance Failure",
+       "Causal Failure",
+       "Dispute Failure",
+       "Analogy Failure",
+       "Method Failure",
+       "Comparison Failure",
+       "Evidence Failure",
+       "Language Failure"
+      ]
+     }
+    }
+   }
+  },
+  "authoring": {
+   "type": "object",
+   "required": [
+    "method",
+    "ai_assistance",
+    "ai_assistance_disclosure",
+    "responsible_human",
+    "no_source_consulted_confirmation_required",
+    "excluded_sources"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "method": {
+     "const": "source_isolated_ai_assisted_draft_human_accepted"
+    },
+    "ai_assistance": {
+     "type": "boolean"
+    },
+    "ai_assistance_disclosure": {
+     "type": "string",
+     "minLength": 1
+    },
+    "responsible_human": {
+     "type": "string",
+     "minLength": 1
+    },
+    "no_source_consulted_confirmation_required": {
+     "const": true
+    },
+    "excluded_sources": {
+     "type": "array",
+     "minItems": 4,
+     "items": {
+      "type": "string",
+      "minLength": 1
+     }
+    }
+   }
+  },
+  "difficulty_evidence_plan": {
+   "type": "object",
+   "required": [
+    "difficulty_status",
+    "blind_solve_min",
+    "adjudicator",
+    "empirical_confirmation_required"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "difficulty_status": {
+     "enum": [
+      "prepublication_expert_calibrated",
+      "prepublication_expert_calibrated_one_sided"
+     ]
+    },
+    "blind_solve_min": {
+     "type": "integer",
+     "minimum": 3
+    },
+    "adjudicator": {
+     "type": "string",
+     "minLength": 1
+    },
+    "empirical_confirmation_required": {
+     "const": true
+    },
+    "same_cell_clean_anchors": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "anchor_gap_flag": {
+     "type": "boolean"
+    },
+    "bracket_ratified": {
+     "type": "boolean"
+    },
+    "ratified_by": {
+     "type": "string",
+     "minLength": 1
+    },
+    "not_one_level_easier_finding_required": {
+     "type": "boolean"
+    },
+    "proposed_bracket": {
+     "type": "object",
+     "additionalProperties": false,
+     "properties": {
+      "same_type_d3": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "cross_type_d4": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "cross_type_d2": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      }
+     }
+    },
+    "method": {
+     "type": "string",
+     "minLength": 1
+    },
+    "upper_anchors_d4": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "cross_type_d3_anchors": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "excluded_anchors": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "first_principles_d3_vs_d4_analysis_required": {
+     "type": "boolean"
+    },
+    "d3_supplement_anchors_named_pre_draft": {
+     "type": "boolean"
+    },
+    "anchor_disclosure": {
+     "type": "string",
+     "minLength": 1
+    },
+    "lower_bracket_contrast_d3": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "disputed_same_cell_excluded": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "formal_core": {
+   "type": "object",
+   "required": [
+    "predicates",
+    "premises",
+    "credited",
+    "distractor_forms",
+    "verifier",
+    "verification_status",
+    "gate"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "predicates": {
+     "type": "array",
+     "minItems": 4,
+     "maxItems": 4,
+     "items": {
+      "type": "string"
+     }
+    },
+    "premises": {
+     "type": "object"
+    },
+    "credited": {
+     "type": "string",
+     "minLength": 1
+    },
+    "distractor_forms": {
+     "type": "object"
+    },
+    "verifier": {
+     "const": "scripts/content/verify_mss_formal_core.py"
+    },
+    "verification_status": {
+     "type": "string",
+     "minLength": 1
+    },
+    "gate": {
+     "type": "string",
+     "minLength": 1
+    }
+   }
+  },
+  "prohibited_now": {
+   "type": "string",
+   "minLength": 1
+  }
+ },
+ "additionalProperties": false
+}

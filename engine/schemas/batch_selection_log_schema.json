@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Batch Selection Log Row",
+  "type": "object",
+  "required": [
+    "source_question_number",
+    "inferred_question_type",
+    "target_category",
+    "coverage_gap_reason",
+    "generation_readiness",
+    "batch_selection_score",
+    "selected_for_batch",
+    "selection_notes"
+  ],
+  "properties": {
+    "source_question_number": {
+      "type": [
+        "string",
+        "integer"
+      ]
+    },
+    "inferred_question_type": {
+      "enum": [
+        "FL",
+        "ST",
+        "WK",
+        "NA",
+        "SA",
+        "MBT",
+        "MSS",
+        "MC",
+        "MR",
+        "RC",
+        "PR",
+        "PA",
+        "PF",
+        "RP",
+        "EV",
+        "PI"
+      ]
+    },
+    "target_category": {
+      "type": "string",
+      "minLength": 1
+    },
+    "coverage_gap_reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "generation_readiness": {
+      "enum": [
+        "generation_ready",
+        "needs_blueprint_repair",
+        "hold_for_later",
+        "unsafe_to_generate"
+      ]
+    },
+    "batch_selection_score": {
+      "type": "number",
+      "minimum": 0
+    },
+    "selected_for_batch": {
+      "type": "boolean"
+    },
+    "selection_notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

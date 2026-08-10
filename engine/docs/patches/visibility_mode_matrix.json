@@ -1,0 +1,30 @@
+[
+  {
+    "mode": "production_student",
+    "visible_publication_states": ["published"],
+    "visible_content_states": ["validated"],
+    "includes_holds": false,
+    "description": "Paid or public students. An item is student-visible only when its content_state is validated AND its publication_state is published (the intersection Spec 03 intends by 'published only')."
+  },
+  {
+    "mode": "internal_beta",
+    "visible_publication_states": ["published", "unpublished"],
+    "visible_content_states": ["validated"],
+    "includes_holds": false,
+    "description": "Internal beta testers and trusted reviewers. Sees validated content whether or not it is published (Spec 03 'published + validated')."
+  },
+  {
+    "mode": "admin_qa",
+    "visible_publication_states": ["published", "unpublished", "retired", "superseded"],
+    "visible_content_states": ["validated", "validated_candidate", "playable_draft_hold"],
+    "includes_holds": true,
+    "description": "Operator, content QA, and engineering. All publication states plus validated, validated_candidate, and hold content; the only mode that includes hold/queue states (Spec 03 'published + validated + validated_candidate + holds')."
+  },
+  {
+    "mode": "factory_import",
+    "visible_publication_states": ["unpublished"],
+    "visible_content_states": ["validated_candidate", "playable_draft", "playable_draft_hold"],
+    "includes_holds": false,
+    "description": "Import process only. New imports before approval, i.e. pre-publication factory content states (Spec 03 'new imports before approval')."
+  }
+]

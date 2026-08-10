@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Admin Audit Event",
+  "type": "object",
+  "required": [
+    "event_id",
+    "event_type",
+    "actor_id",
+    "canonical_id",
+    "content_version",
+    "payload",
+    "created_at"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "event_type": {
+      "enum": [
+        "content_imported",
+        "content_import_blocked",
+        "content_published",
+        "content_unpublished",
+        "content_version_created",
+        "admin_override",
+        "content_promoted",
+        "content_review_hold",
+        "content_rejected"
+      ]
+    },
+    "actor_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "canonical_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "content_version": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "payload": {
+      "type": "object"
+    },
+    "created_at": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": false
+}

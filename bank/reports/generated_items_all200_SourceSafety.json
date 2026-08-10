@@ -1,0 +1,9 @@
+{
+  "source_safety_pass": true,
+  "source_safety_notes": "No exportable raw-source markers found. Scanned clean: 1 file(s).",
+  "scanned_files": [
+    "../../data/runs/AR_V1_FULL200_20260708T014500Z_c7d41a2b/consolidated/output/generated_items_all200.csv"
+  ],
+  "unscanned_files": [],
+  "blocking_failures": []
+}

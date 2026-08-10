@@ -1,0 +1,1817 @@
+{
+  "run_id": "AR_V1_FULL200_20260708T014500Z_c7d41a2b",
+  "item_count": 200,
+  "bar": "no shared content run of 6+ words vs SOURCE",
+  "items_exceeding_bar": 0,
+  "consolidated_pass": true,
+  "max_worst_shared_run_words": 5,
+  "max_worst_item": "AR_V1_B1_0007",
+  "run_length_histogram": {
+    "2": 18,
+    "3": 48,
+    "4": 61,
+    "5": 73
+  },
+  "per_item": [
+    {
+      "canonical_id": "AR_V1_B1_0001",
+      "source_question_number": 48,
+      "question_type": "ST",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "this is a",
+      "exceeds_6word_bar": false,
+      "batch": 1
+    },
+    {
+      "canonical_id": "AR_V1_B1_0002",
+      "source_question_number": 57,
+      "question_type": "ST",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "are unknown to the",
+      "exceeds_6word_bar": false,
+      "batch": 1
+    },
+    {
+      "canonical_id": "AR_V1_B1_0003",
+      "source_question_number": 39,
+      "question_type": "WK",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "been tested to",
+      "exceeds_6word_bar": false,
+      "batch": 1
+    },
+    {
+      "canonical_id": "AR_V1_B1_0004",
+      "source_question_number": 55,
+      "question_type": "WK",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "been shown to be",
+      "exceeds_6word_bar": false,
+      "batch": 1
+    },
+    {
+      "canonical_id": "AR_V1_B1_0005",
+      "source_question_number": 61,
+      "question_type": "WK",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "who treat them harshly",
+      "exceeds_6word_bar": false,
+      "batch": 1
+    },
+    {
+      "canonical_id": "AR_V1_B1_0006",
+      "source_question_number": 2,
+      "question_type": "NA",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "has not been",
+      "exceeds_6word_bar": false,
+      "batch": 1
+    },
+    {
+      "canonical_id": "AR_V1_B1_0007",
+      "source_question_number": 56,
+      "question_type": "NA",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "is generally more responsive to",
+      "exceeds_6word_bar": false,
+      "batch": 1
+    },
+    {
+      "canonical_id": "AR_V1_B1_0008",
+      "source_question_number": 67,
+      "question_type": "NA",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "about the possible consequences of",
+      "exceeds_6word_bar": false,
+      "batch": 1
+    },
+    {
+      "canonical_id": "AR_V1_B1_0009",
+      "source_question_number": 5,
+      "question_type": "SA",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "did not issue",
+      "exceeds_6word_bar": false,
+      "batch": 1
+    },
+    {
+      "canonical_id": "AR_V1_B1_0010",
+      "source_question_number": 44,
+      "question_type": "SA",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "best include those in which",
+      "exceeds_6word_bar": false,
+      "batch": 1
+    },
+    {
+      "canonical_id": "AR_V1_B1_0011",
+      "source_question_number": 13,
+      "question_type": "MC",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "and more complicated than itself",
+      "exceeds_6word_bar": false,
+      "batch": 1
+    },
+    {
+      "canonical_id": "AR_V1_B1_0012",
+      "source_question_number": 30,
+      "question_type": "MC",
+      "worst_shared_content_run_words": 2,
+      "worst_shared_run_text": "advantages over",
+      "exceeds_6word_bar": false,
+      "batch": 1
+    },
+    {
+      "canonical_id": "AR_V1_B1_0013",
+      "source_question_number": 31,
+      "question_type": "MR",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "to mean two different things",
+      "exceeds_6word_bar": false,
+      "batch": 1
+    },
+    {
+      "canonical_id": "AR_V1_B1_0014",
+      "source_question_number": 22,
+      "question_type": "MBT",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "it must be well run",
+      "exceeds_6word_bar": false,
+      "batch": 1
+    },
+    {
+      "canonical_id": "AR_V1_B1_0015",
+      "source_question_number": 50,
+      "question_type": "MBT",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "this indicates both that the",
+      "exceeds_6word_bar": false,
+      "batch": 1
+    },
+    {
+      "canonical_id": "AR_V1_B1_0016",
+      "source_question_number": 68,
+      "question_type": "MBT",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "can all be",
+      "exceeds_6word_bar": false,
+      "batch": 1
+    },
+    {
+      "canonical_id": "AR_V1_B1_0017",
+      "source_question_number": 18,
+      "question_type": "PA",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "so some people who can",
+      "exceeds_6word_bar": false,
+      "batch": 1
+    },
+    {
+      "canonical_id": "AR_V1_B1_0018",
+      "source_question_number": 45,
+      "question_type": "PA",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "should seek the one that",
+      "exceeds_6word_bar": false,
+      "batch": 1
+    },
+    {
+      "canonical_id": "AR_V1_B1_0019",
+      "source_question_number": 37,
+      "question_type": "EV",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "of the same age",
+      "exceeds_6word_bar": false,
+      "batch": 1
+    },
+    {
+      "canonical_id": "AR_V1_B1_0020",
+      "source_question_number": 3,
+      "question_type": "PI",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "as it should be",
+      "exceeds_6word_bar": false,
+      "batch": 1
+    },
+    {
+      "canonical_id": "AR_V1_B2_0001",
+      "source_question_number": 90,
+      "question_type": "ST",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "it is reasonable to",
+      "exceeds_6word_bar": false,
+      "batch": 2
+    },
+    {
+      "canonical_id": "AR_V1_B2_0002",
+      "source_question_number": 13,
+      "question_type": "ST",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "is likely to",
+      "exceeds_6word_bar": false,
+      "batch": 2
+    },
+    {
+      "canonical_id": "AR_V1_B2_0003",
+      "source_question_number": 76,
+      "question_type": "WK",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "historically been quick to adopt",
+      "exceeds_6word_bar": false,
+      "batch": 2
+    },
+    {
+      "canonical_id": "AR_V1_B2_0004",
+      "source_question_number": 15,
+      "question_type": "WK",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "is more effective than shorter",
+      "exceeds_6word_bar": false,
+      "batch": 2
+    },
+    {
+      "canonical_id": "AR_V1_B2_0005",
+      "source_question_number": 21,
+      "question_type": "WK",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "must be fed",
+      "exceeds_6word_bar": false,
+      "batch": 2
+    },
+    {
+      "canonical_id": "AR_V1_B2_0006",
+      "source_question_number": 86,
+      "question_type": "NA",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "unless most of the",
+      "exceeds_6word_bar": false,
+      "batch": 2
+    },
+    {
+      "canonical_id": "AR_V1_B2_0007",
+      "source_question_number": 11,
+      "question_type": "NA",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "recently taken from",
+      "exceeds_6word_bar": false,
+      "batch": 2
+    },
+    {
+      "canonical_id": "AR_V1_B2_0008",
+      "source_question_number": 17,
+      "question_type": "NA",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "enough to keep",
+      "exceeds_6word_bar": false,
+      "batch": 2
+    },
+    {
+      "canonical_id": "AR_V1_B2_0009",
+      "source_question_number": 88,
+      "question_type": "SA",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "will have to",
+      "exceeds_6word_bar": false,
+      "batch": 2
+    },
+    {
+      "canonical_id": "AR_V1_B2_0010",
+      "source_question_number": 97,
+      "question_type": "SA",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "that would make it",
+      "exceeds_6word_bar": false,
+      "batch": 2
+    },
+    {
+      "canonical_id": "AR_V1_B2_0011",
+      "source_question_number": 43,
+      "question_type": "RC",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "it is used to",
+      "exceeds_6word_bar": false,
+      "batch": 2
+    },
+    {
+      "canonical_id": "AR_V1_B2_0012",
+      "source_question_number": 52,
+      "question_type": "MR",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "objection to a practice by",
+      "exceeds_6word_bar": false,
+      "batch": 2
+    },
+    {
+      "canonical_id": "AR_V1_B2_0013",
+      "source_question_number": 63,
+      "question_type": "MR",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "definition does not specify the",
+      "exceeds_6word_bar": false,
+      "batch": 2
+    },
+    {
+      "canonical_id": "AR_V1_B2_0014",
+      "source_question_number": 60,
+      "question_type": "MSS",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "than most other",
+      "exceeds_6word_bar": false,
+      "batch": 2
+    },
+    {
+      "canonical_id": "AR_V1_B2_0015",
+      "source_question_number": 62,
+      "question_type": "MSS",
+      "worst_shared_content_run_words": 2,
+      "worst_shared_run_text": "now carry",
+      "exceeds_6word_bar": false,
+      "batch": 2
+    },
+    {
+      "canonical_id": "AR_V1_B2_0016",
+      "source_question_number": 74,
+      "question_type": "MSS",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "mainly because they believe the",
+      "exceeds_6word_bar": false,
+      "batch": 2
+    },
+    {
+      "canonical_id": "AR_V1_B2_0017",
+      "source_question_number": 73,
+      "question_type": "PA",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "none of the",
+      "exceeds_6word_bar": false,
+      "batch": 2
+    },
+    {
+      "canonical_id": "AR_V1_B2_0018",
+      "source_question_number": 92,
+      "question_type": "PA",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "and none could agree on",
+      "exceeds_6word_bar": false,
+      "batch": 2
+    },
+    {
+      "canonical_id": "AR_V1_B2_0019",
+      "source_question_number": 1,
+      "question_type": "PR",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "it should not have been",
+      "exceeds_6word_bar": false,
+      "batch": 2
+    },
+    {
+      "canonical_id": "AR_V1_B2_0020",
+      "source_question_number": 14,
+      "question_type": "PR",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "even though doing so will",
+      "exceeds_6word_bar": false,
+      "batch": 2
+    },
+    {
+      "canonical_id": "AR_V1_B3_0001",
+      "source_question_number": 21,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "can lead to health problems",
+      "exceeds_6word_bar": false,
+      "batch": 3
+    },
+    {
+      "canonical_id": "AR_V1_B3_0002",
+      "source_question_number": 32,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "has a certain property each",
+      "exceeds_6word_bar": false,
+      "batch": 3
+    },
+    {
+      "canonical_id": "AR_V1_B3_0003",
+      "source_question_number": 35,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "group as a whole",
+      "exceeds_6word_bar": false,
+      "batch": 3
+    },
+    {
+      "canonical_id": "AR_V1_B3_0004",
+      "source_question_number": 46,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "it treats a condition that",
+      "exceeds_6word_bar": false,
+      "batch": 3
+    },
+    {
+      "canonical_id": "AR_V1_B3_0005",
+      "source_question_number": 49,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "could fall an average of",
+      "exceeds_6word_bar": false,
+      "batch": 3
+    },
+    {
+      "canonical_id": "AR_V1_B3_0006",
+      "source_question_number": 65,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "without showing that",
+      "exceeds_6word_bar": false,
+      "batch": 3
+    },
+    {
+      "canonical_id": "AR_V1_B3_0007",
+      "source_question_number": 81,
+      "question_type": "RC",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "of one of the premises",
+      "exceeds_6word_bar": false,
+      "batch": 3
+    },
+    {
+      "canonical_id": "AR_V1_B3_0008",
+      "source_question_number": 84,
+      "question_type": "RC",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "it describes a phenomenon that",
+      "exceeds_6word_bar": false,
+      "batch": 3
+    },
+    {
+      "canonical_id": "AR_V1_B3_0009",
+      "source_question_number": 42,
+      "question_type": "MSS",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "reason for holding them",
+      "exceeds_6word_bar": false,
+      "batch": 3
+    },
+    {
+      "canonical_id": "AR_V1_B3_0010",
+      "source_question_number": 58,
+      "question_type": "MSS",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "away in a",
+      "exceeds_6word_bar": false,
+      "batch": 3
+    },
+    {
+      "canonical_id": "AR_V1_B3_0011",
+      "source_question_number": 77,
+      "question_type": "MSS",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "should be thought of as",
+      "exceeds_6word_bar": false,
+      "batch": 3
+    },
+    {
+      "canonical_id": "AR_V1_B3_0012",
+      "source_question_number": 24,
+      "question_type": "PR",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "as well as in",
+      "exceeds_6word_bar": false,
+      "batch": 3
+    },
+    {
+      "canonical_id": "AR_V1_B3_0013",
+      "source_question_number": 29,
+      "question_type": "PR",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "energy used to construct",
+      "exceeds_6word_bar": false,
+      "batch": 3
+    },
+    {
+      "canonical_id": "AR_V1_B3_0014",
+      "source_question_number": 33,
+      "question_type": "PR",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "by one of the parties",
+      "exceeds_6word_bar": false,
+      "batch": 3
+    },
+    {
+      "canonical_id": "AR_V1_B3_0015",
+      "source_question_number": 5,
+      "question_type": "WK",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "the result of the",
+      "exceeds_6word_bar": false,
+      "batch": 3
+    },
+    {
+      "canonical_id": "AR_V1_B3_0016",
+      "source_question_number": 9,
+      "question_type": "NA",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "the naturalist s",
+      "exceeds_6word_bar": false,
+      "batch": 3
+    },
+    {
+      "canonical_id": "AR_V1_B3_0017",
+      "source_question_number": 6,
+      "question_type": "SA",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "is eligible for",
+      "exceeds_6word_bar": false,
+      "batch": 3
+    },
+    {
+      "canonical_id": "AR_V1_B3_0018",
+      "source_question_number": 13,
+      "question_type": "SA",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "is negligible it follows that",
+      "exceeds_6word_bar": false,
+      "batch": 3
+    },
+    {
+      "canonical_id": "AR_V1_B3_0019",
+      "source_question_number": 12,
+      "question_type": "PA",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "suppose i have",
+      "exceeds_6word_bar": false,
+      "batch": 3
+    },
+    {
+      "canonical_id": "AR_V1_B3_0020",
+      "source_question_number": 1,
+      "question_type": "MC",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "cannot be good for the",
+      "exceeds_6word_bar": false,
+      "batch": 3
+    },
+    {
+      "canonical_id": "AR_V1_B4_0001",
+      "source_question_number": 4,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "and they have not",
+      "exceeds_6word_bar": false,
+      "batch": 4
+    },
+    {
+      "canonical_id": "AR_V1_B4_0002",
+      "source_question_number": 23,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "and some are",
+      "exceeds_6word_bar": false,
+      "batch": 4
+    },
+    {
+      "canonical_id": "AR_V1_B4_0003",
+      "source_question_number": 25,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "the possibility that",
+      "exceeds_6word_bar": false,
+      "batch": 4
+    },
+    {
+      "canonical_id": "AR_V1_B4_0004",
+      "source_question_number": 51,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 2,
+      "worst_shared_run_text": "we are",
+      "exceeds_6word_bar": false,
+      "batch": 4
+    },
+    {
+      "canonical_id": "AR_V1_B4_0005",
+      "source_question_number": 12,
+      "question_type": "ST",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "an hour of sleep",
+      "exceeds_6word_bar": false,
+      "batch": 4
+    },
+    {
+      "canonical_id": "AR_V1_B4_0006",
+      "source_question_number": 27,
+      "question_type": "ST",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "this view is backed by",
+      "exceeds_6word_bar": false,
+      "batch": 4
+    },
+    {
+      "canonical_id": "AR_V1_B4_0007",
+      "source_question_number": 66,
+      "question_type": "ST",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "of one subspecies",
+      "exceeds_6word_bar": false,
+      "batch": 4
+    },
+    {
+      "canonical_id": "AR_V1_B4_0008",
+      "source_question_number": 9,
+      "question_type": "WK",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "at intersections that have",
+      "exceeds_6word_bar": false,
+      "batch": 4
+    },
+    {
+      "canonical_id": "AR_V1_B4_0009",
+      "source_question_number": 6,
+      "question_type": "WK",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "in that case since the",
+      "exceeds_6word_bar": false,
+      "batch": 4
+    },
+    {
+      "canonical_id": "AR_V1_B4_0010",
+      "source_question_number": 34,
+      "question_type": "NA",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "out of self interest",
+      "exceeds_6word_bar": false,
+      "batch": 4
+    },
+    {
+      "canonical_id": "AR_V1_B4_0011",
+      "source_question_number": 47,
+      "question_type": "NA",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "are on the rise",
+      "exceeds_6word_bar": false,
+      "batch": 4
+    },
+    {
+      "canonical_id": "AR_V1_B4_0012",
+      "source_question_number": 17,
+      "question_type": "SA",
+      "worst_shared_content_run_words": 2,
+      "worst_shared_run_text": "of the",
+      "exceeds_6word_bar": false,
+      "batch": 4
+    },
+    {
+      "canonical_id": "AR_V1_B4_0013",
+      "source_question_number": 94,
+      "question_type": "SA",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "my promise to",
+      "exceeds_6word_bar": false,
+      "batch": 4
+    },
+    {
+      "canonical_id": "AR_V1_B4_0014",
+      "source_question_number": 8,
+      "question_type": "RC",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "is said to",
+      "exceeds_6word_bar": false,
+      "batch": 4
+    },
+    {
+      "canonical_id": "AR_V1_B4_0015",
+      "source_question_number": 20,
+      "question_type": "MC",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "essayist since ancient times",
+      "exceeds_6word_bar": false,
+      "batch": 4
+    },
+    {
+      "canonical_id": "AR_V1_B4_0016",
+      "source_question_number": 19,
+      "question_type": "MSS",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "the amount of carbon dioxide",
+      "exceeds_6word_bar": false,
+      "batch": 4
+    },
+    {
+      "canonical_id": "AR_V1_B4_0017",
+      "source_question_number": 72,
+      "question_type": "MBT",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "them others such as",
+      "exceeds_6word_bar": false,
+      "batch": 4
+    },
+    {
+      "canonical_id": "AR_V1_B4_0018",
+      "source_question_number": 23,
+      "question_type": "PA",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "we would expect",
+      "exceeds_6word_bar": false,
+      "batch": 4
+    },
+    {
+      "canonical_id": "AR_V1_B4_0019",
+      "source_question_number": 7,
+      "question_type": "RP",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "produced many of its",
+      "exceeds_6word_bar": false,
+      "batch": 4
+    },
+    {
+      "canonical_id": "AR_V1_B4_0020",
+      "source_question_number": 11,
+      "question_type": "RP",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "have no less food available",
+      "exceeds_6word_bar": false,
+      "batch": 4
+    },
+    {
+      "canonical_id": "AR_V1_B5_0001",
+      "source_question_number": 15,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "not a mistake without rules",
+      "exceeds_6word_bar": false,
+      "batch": 5
+    },
+    {
+      "canonical_id": "AR_V1_B5_0002",
+      "source_question_number": 69,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "after all consider any less",
+      "exceeds_6word_bar": false,
+      "batch": 5
+    },
+    {
+      "canonical_id": "AR_V1_B5_0003",
+      "source_question_number": 71,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "so some of my",
+      "exceeds_6word_bar": false,
+      "batch": 5
+    },
+    {
+      "canonical_id": "AR_V1_B5_0004",
+      "source_question_number": 89,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "largely for social reasons",
+      "exceeds_6word_bar": false,
+      "batch": 5
+    },
+    {
+      "canonical_id": "AR_V1_B5_0005",
+      "source_question_number": 19,
+      "question_type": "ST",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "money can come only from",
+      "exceeds_6word_bar": false,
+      "batch": 5
+    },
+    {
+      "canonical_id": "AR_V1_B5_0006",
+      "source_question_number": 48,
+      "question_type": "ST",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "began to be sold in",
+      "exceeds_6word_bar": false,
+      "batch": 5
+    },
+    {
+      "canonical_id": "AR_V1_B5_0007",
+      "source_question_number": 90,
+      "question_type": "ST",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "reasonable to think that",
+      "exceeds_6word_bar": false,
+      "batch": 5
+    },
+    {
+      "canonical_id": "AR_V1_B5_0008",
+      "source_question_number": 87,
+      "question_type": "WK",
+      "worst_shared_content_run_words": 2,
+      "worst_shared_run_text": "populations in",
+      "exceeds_6word_bar": false,
+      "batch": 5
+    },
+    {
+      "canonical_id": "AR_V1_B5_0009",
+      "source_question_number": 9,
+      "question_type": "WK",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "steadily over the past",
+      "exceeds_6word_bar": false,
+      "batch": 5
+    },
+    {
+      "canonical_id": "AR_V1_B5_0010",
+      "source_question_number": 39,
+      "question_type": "WK",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "however even if",
+      "exceeds_6word_bar": false,
+      "batch": 5
+    },
+    {
+      "canonical_id": "AR_V1_B5_0011",
+      "source_question_number": 95,
+      "question_type": "NA",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "can be made to",
+      "exceeds_6word_bar": false,
+      "batch": 5
+    },
+    {
+      "canonical_id": "AR_V1_B5_0012",
+      "source_question_number": 56,
+      "question_type": "NA",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "have denied that",
+      "exceeds_6word_bar": false,
+      "batch": 5
+    },
+    {
+      "canonical_id": "AR_V1_B5_0013",
+      "source_question_number": 23,
+      "question_type": "SA",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "expected to increase the",
+      "exceeds_6word_bar": false,
+      "batch": 5
+    },
+    {
+      "canonical_id": "AR_V1_B5_0014",
+      "source_question_number": 5,
+      "question_type": "SA",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "that the first",
+      "exceeds_6word_bar": false,
+      "batch": 5
+    },
+    {
+      "canonical_id": "AR_V1_B5_0015",
+      "source_question_number": 10,
+      "question_type": "MC",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "should be used whenever",
+      "exceeds_6word_bar": false,
+      "batch": 5
+    },
+    {
+      "canonical_id": "AR_V1_B5_0016",
+      "source_question_number": 11,
+      "question_type": "RC",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "us is probably a mere",
+      "exceeds_6word_bar": false,
+      "batch": 5
+    },
+    {
+      "canonical_id": "AR_V1_B5_0017",
+      "source_question_number": 80,
+      "question_type": "MSS",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "most of which are",
+      "exceeds_6word_bar": false,
+      "batch": 5
+    },
+    {
+      "canonical_id": "AR_V1_B5_0018",
+      "source_question_number": 82,
+      "question_type": "MBT",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "is only a silent reading",
+      "exceeds_6word_bar": false,
+      "batch": 5
+    },
+    {
+      "canonical_id": "AR_V1_B5_0019",
+      "source_question_number": 10,
+      "question_type": "PF",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "has only the third highest",
+      "exceeds_6word_bar": false,
+      "batch": 5
+    },
+    {
+      "canonical_id": "AR_V1_B5_0020",
+      "source_question_number": 28,
+      "question_type": "RP",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "of all the",
+      "exceeds_6word_bar": false,
+      "batch": 5
+    },
+    {
+      "canonical_id": "AR_V1_B6_0001",
+      "source_question_number": 91,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "as part of a",
+      "exceeds_6word_bar": false,
+      "batch": 6
+    },
+    {
+      "canonical_id": "AR_V1_B6_0002",
+      "source_question_number": 93,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "the presence of",
+      "exceeds_6word_bar": false,
+      "batch": 6
+    },
+    {
+      "canonical_id": "AR_V1_B6_0003",
+      "source_question_number": 98,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "and has been",
+      "exceeds_6word_bar": false,
+      "batch": 6
+    },
+    {
+      "canonical_id": "AR_V1_B6_0004",
+      "source_question_number": 100,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "other than those the original",
+      "exceeds_6word_bar": false,
+      "batch": 6
+    },
+    {
+      "canonical_id": "AR_V1_B6_0005",
+      "source_question_number": 1,
+      "question_type": "ST",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "species closely related to",
+      "exceeds_6word_bar": false,
+      "batch": 6
+    },
+    {
+      "canonical_id": "AR_V1_B6_0006",
+      "source_question_number": 12,
+      "question_type": "ST",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "found that most of the",
+      "exceeds_6word_bar": false,
+      "batch": 6
+    },
+    {
+      "canonical_id": "AR_V1_B6_0007",
+      "source_question_number": 12,
+      "question_type": "ST",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "lose an hour of sleep",
+      "exceeds_6word_bar": false,
+      "batch": 6
+    },
+    {
+      "canonical_id": "AR_V1_B6_0008",
+      "source_question_number": 14,
+      "question_type": "WK",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "in a microwave oven to",
+      "exceeds_6word_bar": false,
+      "batch": 6
+    },
+    {
+      "canonical_id": "AR_V1_B6_0009",
+      "source_question_number": 55,
+      "question_type": "WK",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "the basis of an effective",
+      "exceeds_6word_bar": false,
+      "batch": 6
+    },
+    {
+      "canonical_id": "AR_V1_B6_0010",
+      "source_question_number": 61,
+      "question_type": "WK",
+      "worst_shared_content_run_words": 2,
+      "worst_shared_run_text": "of its",
+      "exceeds_6word_bar": false,
+      "batch": 6
+    },
+    {
+      "canonical_id": "AR_V1_B6_0011",
+      "source_question_number": 5,
+      "question_type": "NA",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "thus the plots of these",
+      "exceeds_6word_bar": false,
+      "batch": 6
+    },
+    {
+      "canonical_id": "AR_V1_B6_0012",
+      "source_question_number": 2,
+      "question_type": "NA",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "awareness of the",
+      "exceeds_6word_bar": false,
+      "batch": 6
+    },
+    {
+      "canonical_id": "AR_V1_B6_0013",
+      "source_question_number": 5,
+      "question_type": "SA",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "to their neighbors",
+      "exceeds_6word_bar": false,
+      "batch": 6
+    },
+    {
+      "canonical_id": "AR_V1_B6_0014",
+      "source_question_number": 17,
+      "question_type": "SA",
+      "worst_shared_content_run_words": 2,
+      "worst_shared_run_text": "us to",
+      "exceeds_6word_bar": false,
+      "batch": 6
+    },
+    {
+      "canonical_id": "AR_V1_B6_0015",
+      "source_question_number": 12,
+      "question_type": "MC",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "might lead one to suspect",
+      "exceeds_6word_bar": false,
+      "batch": 6
+    },
+    {
+      "canonical_id": "AR_V1_B6_0016",
+      "source_question_number": 2,
+      "question_type": "MC",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "is a reduction in",
+      "exceeds_6word_bar": false,
+      "batch": 6
+    },
+    {
+      "canonical_id": "AR_V1_B6_0017",
+      "source_question_number": 3,
+      "question_type": "MSS",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "the end of a",
+      "exceeds_6word_bar": false,
+      "batch": 6
+    },
+    {
+      "canonical_id": "AR_V1_B6_0018",
+      "source_question_number": 22,
+      "question_type": "MSS",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "business is usually conducted",
+      "exceeds_6word_bar": false,
+      "batch": 6
+    },
+    {
+      "canonical_id": "AR_V1_B6_0019",
+      "source_question_number": 75,
+      "question_type": "PF",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "even though several of my",
+      "exceeds_6word_bar": false,
+      "batch": 6
+    },
+    {
+      "canonical_id": "AR_V1_B6_0020",
+      "source_question_number": 36,
+      "question_type": "PR",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "believe would be",
+      "exceeds_6word_bar": false,
+      "batch": 6
+    },
+    {
+      "canonical_id": "AR_V1_B7_0001",
+      "source_question_number": 18,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "of one s",
+      "exceeds_6word_bar": false,
+      "batch": 7
+    },
+    {
+      "canonical_id": "AR_V1_B7_0002",
+      "source_question_number": 4,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 2,
+      "worst_shared_run_text": "of the",
+      "exceeds_6word_bar": false,
+      "batch": 7
+    },
+    {
+      "canonical_id": "AR_V1_B7_0003",
+      "source_question_number": 17,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "large institutions such as",
+      "exceeds_6word_bar": false,
+      "batch": 7
+    },
+    {
+      "canonical_id": "AR_V1_B7_0004",
+      "source_question_number": 23,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "made in them are",
+      "exceeds_6word_bar": false,
+      "batch": 7
+    },
+    {
+      "canonical_id": "AR_V1_B7_0005",
+      "source_question_number": 12,
+      "question_type": "ST",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "are descended from now extinct",
+      "exceeds_6word_bar": false,
+      "batch": 7
+    },
+    {
+      "canonical_id": "AR_V1_B7_0006",
+      "source_question_number": 25,
+      "question_type": "ST",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "between which there is little",
+      "exceeds_6word_bar": false,
+      "batch": 7
+    },
+    {
+      "canonical_id": "AR_V1_B7_0007",
+      "source_question_number": 27,
+      "question_type": "ST",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "this view is backed by",
+      "exceeds_6word_bar": false,
+      "batch": 7
+    },
+    {
+      "canonical_id": "AR_V1_B7_0008",
+      "source_question_number": 3,
+      "question_type": "WK",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "letter to the editor",
+      "exceeds_6word_bar": false,
+      "batch": 7
+    },
+    {
+      "canonical_id": "AR_V1_B7_0009",
+      "source_question_number": 6,
+      "question_type": "WK",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "as an adaptation to",
+      "exceeds_6word_bar": false,
+      "batch": 7
+    },
+    {
+      "canonical_id": "AR_V1_B7_0010",
+      "source_question_number": 9,
+      "question_type": "WK",
+      "worst_shared_content_run_words": 2,
+      "worst_shared_run_text": "does not",
+      "exceeds_6word_bar": false,
+      "batch": 7
+    },
+    {
+      "canonical_id": "AR_V1_B7_0011",
+      "source_question_number": 10,
+      "question_type": "NA",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "a traditional view of",
+      "exceeds_6word_bar": false,
+      "batch": 7
+    },
+    {
+      "canonical_id": "AR_V1_B7_0012",
+      "source_question_number": 47,
+      "question_type": "NA",
+      "worst_shared_content_run_words": 2,
+      "worst_shared_run_text": "to the",
+      "exceeds_6word_bar": false,
+      "batch": 7
+    },
+    {
+      "canonical_id": "AR_V1_B7_0013",
+      "source_question_number": 7,
+      "question_type": "SA",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "children are those that are",
+      "exceeds_6word_bar": false,
+      "batch": 7
+    },
+    {
+      "canonical_id": "AR_V1_B7_0014",
+      "source_question_number": 4,
+      "question_type": "MC",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "whose ownership is in dispute",
+      "exceeds_6word_bar": false,
+      "batch": 7
+    },
+    {
+      "canonical_id": "AR_V1_B7_0015",
+      "source_question_number": 6,
+      "question_type": "RC",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "the infants probably compare",
+      "exceeds_6word_bar": false,
+      "batch": 7
+    },
+    {
+      "canonical_id": "AR_V1_B7_0016",
+      "source_question_number": 8,
+      "question_type": "MSS",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "problems associated with its",
+      "exceeds_6word_bar": false,
+      "batch": 7
+    },
+    {
+      "canonical_id": "AR_V1_B7_0017",
+      "source_question_number": 16,
+      "question_type": "MSS",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "to it for nothing else",
+      "exceeds_6word_bar": false,
+      "batch": 7
+    },
+    {
+      "canonical_id": "AR_V1_B7_0018",
+      "source_question_number": 2,
+      "question_type": "PF",
+      "worst_shared_content_run_words": 2,
+      "worst_shared_run_text": "and a",
+      "exceeds_6word_bar": false,
+      "batch": 7
+    },
+    {
+      "canonical_id": "AR_V1_B7_0019",
+      "source_question_number": 5,
+      "question_type": "PA",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "are the only applicants who",
+      "exceeds_6word_bar": false,
+      "batch": 7
+    },
+    {
+      "canonical_id": "AR_V1_B7_0020",
+      "source_question_number": 38,
+      "question_type": "RP",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "the prepaid accounts of",
+      "exceeds_6word_bar": false,
+      "batch": 7
+    },
+    {
+      "canonical_id": "AR_V1_B8_0001",
+      "source_question_number": 21,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "but i have",
+      "exceeds_6word_bar": false,
+      "batch": 8
+    },
+    {
+      "canonical_id": "AR_V1_B8_0002",
+      "source_question_number": 4,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "is unlikely to",
+      "exceeds_6word_bar": false,
+      "batch": 8
+    },
+    {
+      "canonical_id": "AR_V1_B8_0003",
+      "source_question_number": 8,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "is the most effective",
+      "exceeds_6word_bar": false,
+      "batch": 8
+    },
+    {
+      "canonical_id": "AR_V1_B8_0004",
+      "source_question_number": 25,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "not evolved the ability to",
+      "exceeds_6word_bar": false,
+      "batch": 8
+    },
+    {
+      "canonical_id": "AR_V1_B8_0005",
+      "source_question_number": 57,
+      "question_type": "ST",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "for cynicism about",
+      "exceeds_6word_bar": false,
+      "batch": 8
+    },
+    {
+      "canonical_id": "AR_V1_B8_0006",
+      "source_question_number": 66,
+      "question_type": "ST",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "a recent study",
+      "exceeds_6word_bar": false,
+      "batch": 8
+    },
+    {
+      "canonical_id": "AR_V1_B8_0007",
+      "source_question_number": 13,
+      "question_type": "ST",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "s direct conscious control",
+      "exceeds_6word_bar": false,
+      "batch": 8
+    },
+    {
+      "canonical_id": "AR_V1_B8_0008",
+      "source_question_number": 76,
+      "question_type": "WK",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "at a faster rate or",
+      "exceeds_6word_bar": false,
+      "batch": 8
+    },
+    {
+      "canonical_id": "AR_V1_B8_0009",
+      "source_question_number": 87,
+      "question_type": "WK",
+      "worst_shared_content_run_words": 2,
+      "worst_shared_run_text": "during long",
+      "exceeds_6word_bar": false,
+      "batch": 8
+    },
+    {
+      "canonical_id": "AR_V1_B8_0010",
+      "source_question_number": 15,
+      "question_type": "NA",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "be accomplished by the annual",
+      "exceeds_6word_bar": false,
+      "batch": 8
+    },
+    {
+      "canonical_id": "AR_V1_B8_0011",
+      "source_question_number": 34,
+      "question_type": "NA",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "a recent experiment",
+      "exceeds_6word_bar": false,
+      "batch": 8
+    },
+    {
+      "canonical_id": "AR_V1_B8_0012",
+      "source_question_number": 95,
+      "question_type": "NA",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "can be made to",
+      "exceeds_6word_bar": false,
+      "batch": 8
+    },
+    {
+      "canonical_id": "AR_V1_B8_0013",
+      "source_question_number": 3,
+      "question_type": "SA",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "habits of most people who",
+      "exceeds_6word_bar": false,
+      "batch": 8
+    },
+    {
+      "canonical_id": "AR_V1_B8_0014",
+      "source_question_number": 21,
+      "question_type": "MC",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "the same cannot be said",
+      "exceeds_6word_bar": false,
+      "batch": 8
+    },
+    {
+      "canonical_id": "AR_V1_B8_0015",
+      "source_question_number": 24,
+      "question_type": "MR",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "a work of art",
+      "exceeds_6word_bar": false,
+      "batch": 8
+    },
+    {
+      "canonical_id": "AR_V1_B8_0016",
+      "source_question_number": 10,
+      "question_type": "MSS",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "to things about which",
+      "exceeds_6word_bar": false,
+      "batch": 8
+    },
+    {
+      "canonical_id": "AR_V1_B8_0017",
+      "source_question_number": 18,
+      "question_type": "MSS",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "testing them against",
+      "exceeds_6word_bar": false,
+      "batch": 8
+    },
+    {
+      "canonical_id": "AR_V1_B8_0018",
+      "source_question_number": 23,
+      "question_type": "PA",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "rather than a",
+      "exceeds_6word_bar": false,
+      "batch": 8
+    },
+    {
+      "canonical_id": "AR_V1_B8_0019",
+      "source_question_number": 20,
+      "question_type": "PF",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "by people who have no",
+      "exceeds_6word_bar": false,
+      "batch": 8
+    },
+    {
+      "canonical_id": "AR_V1_B8_0020",
+      "source_question_number": 54,
+      "question_type": "RP",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "reported that it tasted rather",
+      "exceeds_6word_bar": false,
+      "batch": 8
+    },
+    {
+      "canonical_id": "AR_V1_B9_0001",
+      "source_question_number": 8,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "must contend with",
+      "exceeds_6word_bar": false,
+      "batch": 9
+    },
+    {
+      "canonical_id": "AR_V1_B9_0002",
+      "source_question_number": 21,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "on the same",
+      "exceeds_6word_bar": false,
+      "batch": 9
+    },
+    {
+      "canonical_id": "AR_V1_B9_0003",
+      "source_question_number": 18,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 2,
+      "worst_shared_run_text": "it is",
+      "exceeds_6word_bar": false,
+      "batch": 9
+    },
+    {
+      "canonical_id": "AR_V1_B9_0004",
+      "source_question_number": 19,
+      "question_type": "ST",
+      "worst_shared_content_run_words": 2,
+      "worst_shared_run_text": "many candidates",
+      "exceeds_6word_bar": false,
+      "batch": 9
+    },
+    {
+      "canonical_id": "AR_V1_B9_0005",
+      "source_question_number": 1,
+      "question_type": "ST",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "medicinal properties since",
+      "exceeds_6word_bar": false,
+      "batch": 9
+    },
+    {
+      "canonical_id": "AR_V1_B9_0006",
+      "source_question_number": 12,
+      "question_type": "ST",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "that most of the",
+      "exceeds_6word_bar": false,
+      "batch": 9
+    },
+    {
+      "canonical_id": "AR_V1_B9_0007",
+      "source_question_number": 14,
+      "question_type": "WK",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "and the overwhelming majority of",
+      "exceeds_6word_bar": false,
+      "batch": 9
+    },
+    {
+      "canonical_id": "AR_V1_B9_0008",
+      "source_question_number": 9,
+      "question_type": "WK",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "three quarters of",
+      "exceeds_6word_bar": false,
+      "batch": 9
+    },
+    {
+      "canonical_id": "AR_V1_B9_0009",
+      "source_question_number": 17,
+      "question_type": "NA",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "must institute policies that make",
+      "exceeds_6word_bar": false,
+      "batch": 9
+    },
+    {
+      "canonical_id": "AR_V1_B9_0010",
+      "source_question_number": 67,
+      "question_type": "NA",
+      "worst_shared_content_run_words": 2,
+      "worst_shared_run_text": "they are",
+      "exceeds_6word_bar": false,
+      "batch": 9
+    },
+    {
+      "canonical_id": "AR_V1_B9_0011",
+      "source_question_number": 11,
+      "question_type": "NA",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "are higher now than they",
+      "exceeds_6word_bar": false,
+      "batch": 9
+    },
+    {
+      "canonical_id": "AR_V1_B9_0012",
+      "source_question_number": 23,
+      "question_type": "SA",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "expected to reduce the",
+      "exceeds_6word_bar": false,
+      "batch": 9
+    },
+    {
+      "canonical_id": "AR_V1_B9_0013",
+      "source_question_number": 1,
+      "question_type": "MC",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "but this belief is mistaken",
+      "exceeds_6word_bar": false,
+      "batch": 9
+    },
+    {
+      "canonical_id": "AR_V1_B9_0014",
+      "source_question_number": 8,
+      "question_type": "RC",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "even if it does",
+      "exceeds_6word_bar": false,
+      "batch": 9
+    },
+    {
+      "canonical_id": "AR_V1_B9_0015",
+      "source_question_number": 20,
+      "question_type": "MC",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "that it falls short of",
+      "exceeds_6word_bar": false,
+      "batch": 9
+    },
+    {
+      "canonical_id": "AR_V1_B9_0016",
+      "source_question_number": 80,
+      "question_type": "MSS",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "sells a large volume of",
+      "exceeds_6word_bar": false,
+      "batch": 9
+    },
+    {
+      "canonical_id": "AR_V1_B9_0017",
+      "source_question_number": 82,
+      "question_type": "MBT",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "most art forms",
+      "exceeds_6word_bar": false,
+      "batch": 9
+    },
+    {
+      "canonical_id": "AR_V1_B9_0018",
+      "source_question_number": 15,
+      "question_type": "PF",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "commentator the reported epidemic of",
+      "exceeds_6word_bar": false,
+      "batch": 9
+    },
+    {
+      "canonical_id": "AR_V1_B9_0019",
+      "source_question_number": 41,
+      "question_type": "PR",
+      "worst_shared_content_run_words": 2,
+      "worst_shared_run_text": "for doubt",
+      "exceeds_6word_bar": false,
+      "batch": 9
+    },
+    {
+      "canonical_id": "AR_V1_B9_0020",
+      "source_question_number": 40,
+      "question_type": "PI",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "the beauty of the",
+      "exceeds_6word_bar": false,
+      "batch": 9
+    },
+    {
+      "canonical_id": "AR_V1_B10_0001",
+      "source_question_number": 15,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "beyond our reach for",
+      "exceeds_6word_bar": false,
+      "batch": 10
+    },
+    {
+      "canonical_id": "AR_V1_B10_0002",
+      "source_question_number": 19,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "year the average number of",
+      "exceeds_6word_bar": false,
+      "batch": 10
+    },
+    {
+      "canonical_id": "AR_V1_B10_0003",
+      "source_question_number": 24,
+      "question_type": "FL",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "taken as a whole the",
+      "exceeds_6word_bar": false,
+      "batch": 10
+    },
+    {
+      "canonical_id": "AR_V1_B10_0004",
+      "source_question_number": 12,
+      "question_type": "ST",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "off from the",
+      "exceeds_6word_bar": false,
+      "batch": 10
+    },
+    {
+      "canonical_id": "AR_V1_B10_0005",
+      "source_question_number": 25,
+      "question_type": "ST",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "stand in the way of",
+      "exceeds_6word_bar": false,
+      "batch": 10
+    },
+    {
+      "canonical_id": "AR_V1_B10_0006",
+      "source_question_number": 22,
+      "question_type": "WK",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "only about two thirds of",
+      "exceeds_6word_bar": false,
+      "batch": 10
+    },
+    {
+      "canonical_id": "AR_V1_B10_0007",
+      "source_question_number": 3,
+      "question_type": "WK",
+      "worst_shared_content_run_words": 2,
+      "worst_shared_run_text": "to the",
+      "exceeds_6word_bar": false,
+      "batch": 10
+    },
+    {
+      "canonical_id": "AR_V1_B10_0008",
+      "source_question_number": 16,
+      "question_type": "NA",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "that a child could",
+      "exceeds_6word_bar": false,
+      "batch": 10
+    },
+    {
+      "canonical_id": "AR_V1_B10_0009",
+      "source_question_number": 10,
+      "question_type": "NA",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "established that a",
+      "exceeds_6word_bar": false,
+      "batch": 10
+    },
+    {
+      "canonical_id": "AR_V1_B10_0010",
+      "source_question_number": 5,
+      "question_type": "NA",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "comes to pass thus the",
+      "exceeds_6word_bar": false,
+      "batch": 10
+    },
+    {
+      "canonical_id": "AR_V1_B10_0011",
+      "source_question_number": 3,
+      "question_type": "SA",
+      "worst_shared_content_run_words": 3,
+      "worst_shared_run_text": "look at the",
+      "exceeds_6word_bar": false,
+      "batch": 10
+    },
+    {
+      "canonical_id": "AR_V1_B10_0012",
+      "source_question_number": 2,
+      "question_type": "MC",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "a major risk factor",
+      "exceeds_6word_bar": false,
+      "batch": 10
+    },
+    {
+      "canonical_id": "AR_V1_B10_0013",
+      "source_question_number": 4,
+      "question_type": "MC",
+      "worst_shared_content_run_words": 2,
+      "worst_shared_run_text": "our university",
+      "exceeds_6word_bar": false,
+      "batch": 10
+    },
+    {
+      "canonical_id": "AR_V1_B10_0014",
+      "source_question_number": 20,
+      "question_type": "MBT",
+      "worst_shared_content_run_words": 5,
+      "worst_shared_run_text": "that are very difficult to",
+      "exceeds_6word_bar": false,
+      "batch": 10
+    },
+    {
+      "canonical_id": "AR_V1_B10_0015",
+      "source_question_number": 19,
+      "question_type": "MSS",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "the amount of carbon",
+      "exceeds_6word_bar": false,
+      "batch": 10
+    },
+    {
+      "canonical_id": "AR_V1_B10_0016",
+      "source_question_number": 72,
+      "question_type": "MBT",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "them others such as",
+      "exceeds_6word_bar": false,
+      "batch": 10
+    },
+    {
+      "canonical_id": "AR_V1_B10_0017",
+      "source_question_number": 75,
+      "question_type": "PF",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "though several of my",
+      "exceeds_6word_bar": false,
+      "batch": 10
+    },
+    {
+      "canonical_id": "AR_V1_B10_0018",
+      "source_question_number": 59,
+      "question_type": "RP",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "market studies confirm that",
+      "exceeds_6word_bar": false,
+      "batch": 10
+    },
+    {
+      "canonical_id": "AR_V1_B10_0019",
+      "source_question_number": 64,
+      "question_type": "PR",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "testing of its safety",
+      "exceeds_6word_bar": false,
+      "batch": 10
+    },
+    {
+      "canonical_id": "AR_V1_B10_0020",
+      "source_question_number": 78,
+      "question_type": "PI",
+      "worst_shared_content_run_words": 4,
+      "worst_shared_run_text": "widen because of the",
+      "exceeds_6word_bar": false,
+      "batch": 10
+    }
+  ]
+}

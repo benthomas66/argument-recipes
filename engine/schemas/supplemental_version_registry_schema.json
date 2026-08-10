@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://argument.recipes/schemas/supplemental_version_registry_schema.json",
+  "title": "Supplemental Content Version Registry",
+  "type": "object",
+  "required": ["schema_version", "versions"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "versions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "canonical_id", "content_version", "item_path", "item_file_sha256",
+          "lifecycle_state", "attestation_path"
+        ],
+        "properties": {
+          "canonical_id": {"type": "string", "pattern": "^AR_TAX_[0-9]{4}$"},
+          "content_version": {"type": "integer", "minimum": 1},
+          "item_path": {"type": "string", "minLength": 1},
+          "item_file_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "lifecycle_state": {
+            "enum": [
+              "draft_pending_attestation",
+              "attested_pending_content_review",
+              "content_reviewed",
+              "eligible_for_promotion",
+              "promoted",
+              "published"
+            ]
+          },
+          "attestation_path": {"type": ["string", "null"]}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

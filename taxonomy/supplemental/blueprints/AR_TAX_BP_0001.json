@@ -1,0 +1,108 @@
+{
+ "blueprint_id": "AR_TAX_BP_0001",
+ "reserved_item_id": "AR_TAX_0001",
+ "provenance_class": "taxonomy_only",
+ "governing_ruling": "docs/patches/TAXONOMY_SUPPLEMENT_RULINGS_V1.md",
+ "packet": "docs/specs/SUPPLEMENTAL_BLUEPRINT_PACKET_V1.md",
+ "cell": {
+  "question_type": "ST",
+  "target_difficulty": 4
+ },
+ "recipe": {
+  "recipe_id": "STRENGTHEN_SUPPORT_CAUSE",
+  "recipe_title": "Confirm the Proposed Mechanism",
+  "seed_row": "db/seeds/0002_recipes_seed.sql#STRENGTHEN_SUPPORT_CAUSE"
+ },
+ "credited_answer_job": "Supply a finding that independently confirms the causal mechanism the argument proposes between the cited evidence and the conclusion.",
+ "argument_form": "Observational premise + proposed causal explanation + conclusion asserting the cause; one competing consideration and one qualifier embedded.",
+ "trap_plan": [
+  {
+   "slot": 1,
+   "trap_family": "Direction Failure",
+   "mechanism": "Finding that undermines or reverses the proposed mechanism.",
+   "blind_solve_survivor": true,
+   "seed_row": "db/seeds/0001_trap_taxonomy_seed.sql#Direction Failure"
+  },
+  {
+   "slot": 2,
+   "trap_family": "Scope Failure",
+   "mechanism": "Confirms a broader or adjacent claim, not the concluded link.",
+   "blind_solve_survivor": true,
+   "seed_row": "db/seeds/0001_trap_taxonomy_seed.sql#Scope Failure"
+  },
+  {
+   "slot": 3,
+   "trap_family": "Causal Failure",
+   "mechanism": "Restates the observed correlation as if it were new support.",
+   "blind_solve_survivor": false,
+   "seed_row": "db/seeds/0001_trap_taxonomy_seed.sql#Causal Failure"
+  },
+  {
+   "slot": 4,
+   "trap_family": "Comparison Failure",
+   "mechanism": "Favorable comparison that never touches the mechanism (permitted weaker slot).",
+   "blind_solve_survivor": false,
+   "seed_row": "db/seeds/0001_trap_taxonomy_seed.sql#Comparison Failure"
+  }
+ ],
+ "trap_plan_constraints": {
+  "same_family_attractive_min": 3,
+  "eliminable_max": 1,
+  "blind_solve_survivors_min": 2
+ },
+ "structural_spec": {
+  "moving_parts_min": 4,
+  "stimulus_length_band": "medium",
+  "word_floor": 60,
+  "reasoning_density": "high",
+  "standard": "docs/patches/CONTENT_DIFFICULTY_CALIBRATION_V1.md"
+ },
+ "taxonomy_basis": {
+  "recipe_rows": [
+   "STRENGTHEN_SUPPORT_CAUSE"
+  ],
+  "trap_rows": [
+   "Direction Failure",
+   "Scope Failure",
+   "Causal Failure",
+   "Comparison Failure"
+  ]
+ },
+ "authoring": {
+  "method": "source_isolated_ai_assisted_draft_human_accepted",
+  "ai_assistance": true,
+  "ai_assistance_disclosure": "AI drafting permitted under rulings section 4-5; disclosed per item at acceptance",
+  "responsible_human": "operator (named at acceptance)",
+  "no_source_consulted_confirmation_required": true,
+  "excluded_sources": [
+   "original_bank",
+   "june2007",
+   "pt86",
+   "any other LSAT item surface"
+  ]
+ },
+ "difficulty_evidence_plan": {
+  "difficulty_status": "prepublication_expert_calibrated",
+  "blind_solve_min": 3,
+  "adjudicator": "named qualified human (Spec 07 section 10.2)",
+  "empirical_confirmation_required": true,
+  "same_cell_clean_anchors": [],
+  "anchor_gap_flag": true,
+  "proposed_bracket": {
+   "same_type_d3": [
+    "AR_V1_B4_0007",
+    "AR_V1_B5_0007",
+    "AR_V1_B6_0007"
+   ],
+   "cross_type_d4": [
+    "AR_V1_B1_0006",
+    "AR_V1_B2_0017",
+    "AR_V1_B6_0019"
+   ]
+  },
+  "bracket_ratified": true,
+  "ratified_by": "docs/patches/DIFFICULTY_EVIDENCE_RULINGS_V1.md#R3",
+  "not_one_level_easier_finding_required": true
+ },
+ "prohibited_now": "No item prose at this stage (rulings section 10)."
+}

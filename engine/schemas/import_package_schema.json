@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Import Package Manifest",
+  "type": "object",
+  "required": [
+    "import_package_id",
+    "run_id",
+    "generated_items_csv",
+    "validation_report",
+    "source_safety_pass",
+    "status_authority_pass",
+    "created_at",
+    "import_target",
+    "generated_items_csv_hash",
+    "validation_report_hash"
+  ],
+  "properties": {
+    "import_package_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "generated_items_csv": {
+      "type": "string",
+      "minLength": 1
+    },
+    "validation_report": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_safety_pass": {
+      "type": "boolean"
+    },
+    "status_authority_pass": {
+      "type": "boolean"
+    },
+    "created_at": {
+      "type": "string",
+      "minLength": 1
+    },
+    "import_target": {
+      "type": "string",
+      "enum": ["content_items_staging"]
+    },
+    "generated_items_csv_hash": {
+      "type": "string",
+      "minLength": 1
+    },
+    "validation_report_hash": {
+      "type": "string",
+      "minLength": 1
+    },
+    "supplemental_version_registry": {
+      "type": "string",
+      "minLength": 1
+    },
+    "supplemental_version_registry_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "supplemental_versions": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": ["canonical_id", "content_version", "item_file_sha256"],
+        "properties": {
+          "canonical_id": {"type": "string", "pattern": "^AR_TAX_[0-9]{4}$"},
+          "content_version": {"type": "integer", "minimum": 2},
+          "item_file_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "dependentRequired": {
+    "supplemental_version_registry": [
+      "supplemental_version_registry_hash", "supplemental_versions"
+    ],
+    "supplemental_version_registry_hash": [
+      "supplemental_version_registry", "supplemental_versions"
+    ],
+    "supplemental_versions": [
+      "supplemental_version_registry", "supplemental_version_registry_hash"
+    ]
+  },
+  "additionalProperties": false
+}

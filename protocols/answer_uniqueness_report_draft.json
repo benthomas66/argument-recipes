@@ -1,0 +1,125 @@
+{
+ "artifact": "answer_uniqueness_report",
+ "version": "draft_v1_analytic",
+ "disclosure": "Analytic layer authored by the AI drafter with full item knowledge. It is a uniqueness DEFENSE, not blind evidence, and no entry here is a solve record. The empirical layer (solver convergence and alternate-answer concerns) is compiled from blinded solve records when they exist.",
+ "empirical_layer": "COMPILED: see empirical_review_compilation_v1.json (v1, model-records-only)",
+ "items": [
+  {
+   "id": "AR_TAX_0001",
+   "key": "B",
+   "defense": "Only B supplies new evidence locating the gain at the widened-sidewalk stops, which is the proposed mechanism itself.",
+   "decisive_failures": {
+    "A": "weakens: riders disclaim the mechanism",
+    "C": "general preference; no link to this line's gain",
+    "D": "restates the timing already in the premises",
+    "E": "cross-line comparison; mechanism untouched"
+   },
+   "residual_risk": "low",
+   "watch": null
+  },
+  {
+   "id": "AR_TAX_0002",
+   "key": "D",
+   "defense": "The argument's job is rival elimination; only D removes runoff from contention with direct measurement across the decline.",
+   "decisive_failures": {
+    "A": "timing correlation compatible with both causes; adds no discrimination",
+    "B": "supports the rival; weakens",
+    "C": "regional decade trend; wrong scope",
+    "E": "background; discriminates nothing"
+   },
+   "residual_risk": "medium",
+   "watch": "A: a solver may read onset-timing as strengthening dredging; on a most-strengthens standard D dominates because A leaves the rival fully live. Monitor alternate-answer concerns."
+  },
+  {
+   "id": "AR_TAX_0003",
+   "key": "C",
+   "defense": "Only C reproduces the two-universal-link chain closed by denying the final property (contrapositive).",
+   "decisive_failures": {
+    "A": "forward modus ponens from a positive premise",
+    "B": "one conditional plus an unrelated disqualifier; no chain",
+    "D": "affirms the consequent; invalid where stimulus is valid",
+    "E": "most-quantified chain; different strength"
+   },
+   "residual_risk": "low",
+   "watch": "B: negative conclusion may pull skimming solvers."
+  },
+  {
+   "id": "AR_TAX_0004",
+   "key": "E",
+   "defense": "Only E infers the cause from the effect under a bare whenever-conditional - the stimulus's exact affirming-the-consequent.",
+   "decisive_failures": {
+    "A": "the never-in-error premise makes the notice sufficient; valid, hence not the flaw",
+    "B": "denies the antecedent; different flaw",
+    "C": "valid contrapositive",
+    "D": "hasty generalization; different flaw"
+   },
+   "residual_risk": "medium",
+   "watch": "A: hinges on solvers crediting the reliability premise as licensing the inference; a solver who discounts it may call A flawed-and-parallel. This is the designed near-miss; monitor closely in solves."
+  },
+  {
+   "id": "AR_TAX_0005",
+   "key": "A",
+   "defense": "The inference runs from majority opposition to the decision's wrongness; A names exactly that popularity-as-proof move.",
+   "decisive_failures": {
+    "B": "the stated large randomized design defeats the representativeness charge",
+    "C": "no premise restates the conclusion",
+    "D": "no claim about future projects is made",
+    "E": "names no reasoning defect"
+   },
+   "residual_risk": "low",
+   "watch": "B is the intended magnet; its failure is decisive on the stated survey design."
+  },
+  {
+   "id": "AR_TAX_0006",
+   "key": "D",
+   "defense": "The argument's load-bearing link is the cardholder-vs-prior-overall comparison; only D breaks it via self-selection.",
+   "decisive_failures": {
+    "A": "other cafes' sales; different claim and scope",
+    "B": "strengthens",
+    "C": "another cafe's figures leave this inference intact",
+    "E": "irrelevant cost detail"
+   },
+   "residual_risk": "low",
+   "watch": null
+  },
+  {
+   "id": "AR_TAX_0007",
+   "key": "B",
+   "defense": "Only B supplies a concrete rival cause operating this fall at this school.",
+   "decisive_failures": {
+    "A": "abstract maxim; names no rival",
+    "C": "strengthens",
+    "D": "different effect, different populations",
+    "E": "insinuation without any identified error"
+   },
+   "residual_risk": "low",
+   "watch": "A: solvers sometimes over-credit the maxim; it changes nothing about which cause operated."
+  },
+  {
+   "id": "AR_TAX_0008",
+   "key": "E",
+   "defense": "Negation test separates uniquely: deny E and the premises no longer reach the Fund's criterion; every other choice's denial leaves the argument standing.",
+   "decisive_failures": {
+    "A": "sufficient-style universal; the likely-support conclusion survives its denial",
+    "B": "track record helps but is not required",
+    "C": "conditional runs the wrong direction",
+    "D": "origin story not needed"
+   },
+   "residual_risk": "medium",
+   "watch": "A: strong-sounding; the necessity/sufficiency separation is the tested skill. Monitor."
+  },
+  {
+   "id": "AR_TAX_0009",
+   "key": "C",
+   "defense": "Machine-verified: C is entailed by the premises; A is contra-entailed; B, D, E each have exhibited countermodels (scripts/content/verify_mss_formal_core.py, PASS at v42 and v43).",
+   "decisive_failures": {
+    "A": "premises entail most Valley orchards ARE inspected",
+    "B": "non-organic Valley orchards may be exempt",
+    "D": "no premise bounds the board's inspection pool",
+    "E": "most is not all; an uninspected Valley orchard is consistent"
+   },
+   "residual_risk": "low - formally proven",
+   "watch": null
+  }
+ ]
+}

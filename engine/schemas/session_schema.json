@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Learning Session",
+  "type": "object",
+  "required": [
+    "session_id",
+    "user_id",
+    "session_type",
+    "started_at",
+    "status",
+    "planned_item_count",
+    "selection_policy"
+  ],
+  "properties": {
+    "session_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "user_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "session_type": {
+      "enum": [
+        "diagnostic",
+        "daily_repair",
+        "targeted_drill",
+        "missed_trap_review",
+        "timed_practice"
+      ]
+    },
+    "started_at": {
+      "type": "string",
+      "minLength": 1
+    },
+    "completed_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "enum": [
+        "active",
+        "completed",
+        "abandoned"
+      ]
+    },
+    "planned_item_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "actual_item_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "selection_policy": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": false
+}

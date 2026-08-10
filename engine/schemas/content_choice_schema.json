@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Content Choice",
+  "description": "Spec 03 §7.2. Trap columns live on Content Explanation, not here (CONTENT_DDL_CONFORMANCE_V1 D-2).",
+  "type": "object",
+  "required": [
+    "canonical_id",
+    "content_version",
+    "choice_letter",
+    "choice_text",
+    "is_correct",
+    "display_order"
+  ],
+  "properties": {
+    "canonical_id": { "type": "string", "minLength": 1 },
+    "content_version": { "type": "integer", "minimum": 1 },
+    "choice_letter": { "enum": ["A", "B", "C", "D", "E"] },
+    "choice_text": { "type": "string", "minLength": 1 },
+    "is_correct": { "type": "boolean" },
+    "display_order": { "type": "integer", "minimum": 1, "maximum": 5 },
+    "created_from_shuffle": { "type": "boolean" }
+  },
+  "additionalProperties": false
+}

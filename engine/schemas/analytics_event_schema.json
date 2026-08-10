@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Analytics Event",
+  "type": "object",
+  "required": [
+    "event_id",
+    "user_id",
+    "event_name",
+    "occurred_at",
+    "properties"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "user_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "anonymous_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "event_name": {
+      "enum": [
+        "signup_completed",
+        "onboarding_completed",
+        "diagnostic_started",
+        "diagnostic_item_submitted",
+        "diagnostic_completed",
+        "daily_repair_started",
+        "practice_item_viewed",
+        "practice_item_submitted",
+        "explanation_viewed",
+        "trap_feedback_viewed",
+        "daily_repair_completed",
+        "review_queue_item_completed",
+        "admin_item_reviewed",
+        "content_import_completed",
+        "paywall_viewed",
+        "subscription_started",
+        "subscription_canceled",
+        "payment_failed"
+      ]
+    },
+    "occurred_at": {
+      "type": "string",
+      "minLength": 1
+    },
+    "properties": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

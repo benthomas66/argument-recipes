@@ -1,0 +1,468 @@
+{
+ "artifact": "empirical_review_compilation",
+ "version": "v1",
+ "source_records": {
+  "file": "blinded_solve_records_v1.json",
+  "sha256": "2bf32b9a4c4e9533004048eb507c3a5229222ad84a68b98b755ebfbf67915b11",
+  "n": 31,
+  "solver_types": {
+   "fresh_model_context": 31
+  },
+  "human_records": 0
+ },
+ "evidence_scope_note": "All 31 records are fresh_model_context (operator-authorized contributors). Record-count minimums are met under the operator instruction; automated records remain supplementary: no item is approved without named-human A5 acceptance and A7 adjudication. Model perceived-difficulty showed no discrimination between d2-target and d4-target items (near-uniform 2) and carries ~zero adjudication weight. The d3+ two-survivor floor is UNVERIFIED by this set: a single model produced one uniform runner-up per item.",
+ "items": [
+  {
+   "item_id": "AR_TAX_0001",
+   "key": "B",
+   "target_difficulty": 4,
+   "n_records": 3,
+   "convergence": "3/3",
+   "selections": {
+    "B": 3
+   },
+   "second_choices": {
+    "D": 3
+   },
+   "confidence": {
+    "high": 3
+   },
+   "perceived_difficulty": {
+    "values": [
+     2,
+     3,
+     3
+    ],
+    "mean": 2.67,
+    "target": 4,
+    "discriminating": false
+   },
+   "alternate_answer_concerns": [
+    "D is defensible as temporal correlation supports causation, but it doesn't rule out the fare discount alternative explanation as effectively as B does.",
+    "D is defensible since the timing correlation strengthens causation, but it doesn't rule out the fare discount as effectively as B does.",
+    "D is defensible because the timing correlation strengthens the causal link between project completion and ridership gains."
+   ],
+   "concerns_resolved_toward_key": true,
+   "watch_flag": null,
+   "watch_flag_result": null,
+   "predicted_survivors": [
+    "A",
+    "C"
+   ],
+   "observed_tempting_set": [
+    "D"
+   ],
+   "survivor_prediction_match": false,
+   "two_survivor_floor": "UNVERIFIED_single_model_uniform_runner_up",
+   "empirical_uniqueness": "STRONG (unanimous key selection; every stated concern subordinated the alternate to the key)",
+   "proposed_disposition": "ACCEPT",
+   "disposition_conditions": [
+    "A5 named-human acceptance",
+    "A7 named-human anchored adjudication with required finding (not one level easier, R3)",
+    "recommended: 1-2 key-naive human solve records to give A7 discriminating difficulty signal and to test the two-survivor floor"
+   ]
+  },
+  {
+   "item_id": "AR_TAX_0002",
+   "key": "D",
+   "target_difficulty": 4,
+   "n_records": 3,
+   "convergence": "3/3",
+   "selections": {
+    "D": 3
+   },
+   "second_choices": {
+    "A": 3
+   },
+   "confidence": {
+    "high": 3
+   },
+   "perceived_difficulty": {
+    "values": [
+     2,
+     2,
+     2
+    ],
+    "mean": 2,
+    "target": 4,
+    "discriminating": false
+   },
+   "alternate_answer_concerns": [
+    "A is tempting because temporal correlation with dredging supports causation, but it doesn't rule out the competing runoff explanation.",
+    "A is defensible as it establishes a temporal correlation between dredging and the decline, supporting causation.",
+    "A is defensible because it establishes a temporal correlation between dredging and the decline, supporting causation."
+   ],
+   "concerns_resolved_toward_key": true,
+   "watch_flag": "A: a solver may read onset-timing as strengthening dredging; on a most-strengthens standard D dominates because A leaves the rival fully live. Monitor alternate-answer concerns.",
+   "watch_flag_result": "confirmed_and_resolved",
+   "predicted_survivors": [
+    "A",
+    "B"
+   ],
+   "observed_tempting_set": [
+    "A"
+   ],
+   "survivor_prediction_match": true,
+   "two_survivor_floor": "UNVERIFIED_single_model_uniform_runner_up",
+   "empirical_uniqueness": "STRONG (unanimous key selection; every stated concern subordinated the alternate to the key)",
+   "proposed_disposition": "ACCEPT",
+   "disposition_conditions": [
+    "A5 named-human acceptance",
+    "A7 named-human anchored adjudication with required finding (not one level easier, R3)",
+    "recommended: 1-2 key-naive human solve records to give A7 discriminating difficulty signal and to test the two-survivor floor"
+   ]
+  },
+  {
+   "item_id": "AR_TAX_0003",
+   "key": "C",
+   "target_difficulty": 3,
+   "n_records": 5,
+   "convergence": "5/5",
+   "selections": {
+    "C": 5
+   },
+   "second_choices": {
+    "B": 5
+   },
+   "confidence": {
+    "high": 5
+   },
+   "perceived_difficulty": {
+    "values": [
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "mean": 2,
+    "target": 3,
+    "discriminating": false
+   },
+   "alternate_answer_concerns": [
+    "B is tempting but introduces an extra irrelevant premise (not certified for open water) that has no parallel in the original.",
+    "B is superficially similar but introduces an extra irrelevant premise about open-water certification not present in the original structure.",
+    "B is tempting but adds an irrelevant second condition (not certified for open water) not present in the original structure.",
+    "B is defensible structurally but introduces an extra irrelevant premise (not certified for open water) that has no parallel in the original argument.",
+    "B is tempting but adds an irrelevant second condition (not certified for open water) not present in the original structure."
+   ],
+   "concerns_resolved_toward_key": true,
+   "watch_flag": "B: negative conclusion may pull skimming solvers.",
+   "watch_flag_result": "confirmed_and_resolved",
+   "predicted_survivors": [
+    "A",
+    "B"
+   ],
+   "observed_tempting_set": [
+    "B"
+   ],
+   "survivor_prediction_match": true,
+   "two_survivor_floor": "UNVERIFIED_single_model_uniform_runner_up",
+   "empirical_uniqueness": "STRONG (unanimous key selection; every stated concern subordinated the alternate to the key)",
+   "proposed_disposition": "ACCEPT",
+   "disposition_conditions": [
+    "A5 named-human acceptance",
+    "A7 named-human anchored adjudication with required finding (d3-not-d4, one-sided R4; adopt/amend/replace drafted first-principles analysis)",
+    "recommended: 1-2 key-naive human solve records to give A7 discriminating difficulty signal and to test the two-survivor floor"
+   ]
+  },
+  {
+   "item_id": "AR_TAX_0004",
+   "key": "E",
+   "target_difficulty": 3,
+   "n_records": 5,
+   "convergence": "5/5",
+   "selections": {
+    "E": 5
+   },
+   "second_choices": {
+    "A": 5
+   },
+   "confidence": {
+    "high": 5
+   },
+   "perceived_difficulty": {
+    "values": [
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "mean": 2,
+    "target": 3,
+    "discriminating": false
+   },
+   "alternate_answer_concerns": [
+    "A might tempt some, but the 'never shows in error' clause makes A's reasoning actually valid, not flawed.",
+    "A might tempt some, but 'never shows one in error' makes that argument valid, not flawed.",
+    "Choice A might tempt some, but the added 'never shows one in error' clause makes it a valid argument, not a flawed one.",
+    "A might tempt some since it involves similar surface structure, but the 'never shows one in error' clause makes it logically valid rather than fallacious.",
+    "Choice A might seem similar but the 'display never shows one in error' clause makes it valid, not flawed."
+   ],
+   "concerns_resolved_toward_key": true,
+   "watch_flag": "A: hinges on solvers crediting the reliability premise as licensing the inference; a solver who discounts it may call A flawed-and-parallel. This is the designed near-miss; monitor closely in solves.",
+   "watch_flag_result": "confirmed_and_resolved",
+   "predicted_survivors": [
+    "A",
+    "B"
+   ],
+   "observed_tempting_set": [
+    "A"
+   ],
+   "survivor_prediction_match": true,
+   "two_survivor_floor": "UNVERIFIED_single_model_uniform_runner_up",
+   "empirical_uniqueness": "STRONG (unanimous key selection; every stated concern subordinated the alternate to the key)",
+   "proposed_disposition": "ACCEPT",
+   "disposition_conditions": [
+    "A5 named-human acceptance",
+    "A7 named-human anchored adjudication with required finding (d3-not-d4, one-sided R4; adopt/amend/replace drafted first-principles analysis)",
+    "recommended: 1-2 key-naive human solve records to give A7 discriminating difficulty signal and to test the two-survivor floor"
+   ]
+  },
+  {
+   "item_id": "AR_TAX_0005",
+   "key": "A",
+   "target_difficulty": 2,
+   "n_records": 3,
+   "convergence": "3/3",
+   "selections": {
+    "A": 3
+   },
+   "second_choices": {
+    "C": 3
+   },
+   "confidence": {
+    "high": 3
+   },
+   "perceived_difficulty": {
+    "values": [
+     2,
+     2,
+     2
+    ],
+    "mean": 2,
+    "target": 2,
+    "discriminating": false
+   },
+   "alternate_answer_concerns": [
+    "C is tempting since 'a decision opposed by a clear majority cannot be right' nearly restates the conclusion, but A more precisely captures the logical flaw.",
+    "C is tempting since 'a decision opposed by a clear majority cannot have been right' nearly restates the conclusion, but it functions as an independent premise rather than a pure circular restatement.",
+    "C is tempting since the final premise seems to restate the conclusion, but A more precisely identifies the logical flaw of treating majority opinion as establishing truth."
+   ],
+   "concerns_resolved_toward_key": true,
+   "watch_flag": "B is the intended magnet; its failure is decisive on the stated survey design.",
+   "watch_flag_result": "confirmed_and_resolved",
+   "predicted_survivors": [
+    "B"
+   ],
+   "observed_tempting_set": [
+    "C"
+   ],
+   "survivor_prediction_match": false,
+   "two_survivor_floor": "not_required_d2",
+   "empirical_uniqueness": "STRONG (unanimous key selection; every stated concern subordinated the alternate to the key)",
+   "proposed_disposition": "ACCEPT",
+   "disposition_conditions": [
+    "A5 named-human acceptance",
+    "A7 named-human anchored adjudication with required finding"
+   ]
+  },
+  {
+   "item_id": "AR_TAX_0006",
+   "key": "D",
+   "target_difficulty": 2,
+   "n_records": 3,
+   "convergence": "3/3",
+   "selections": {
+    "D": 3
+   },
+   "second_choices": {
+    "A": 3
+   },
+   "confidence": {
+    "high": 3
+   },
+   "perceived_difficulty": {
+    "values": [
+     2,
+     2,
+     2
+    ],
+    "mean": 2,
+    "target": 2,
+    "discriminating": false
+   },
+   "alternate_answer_concerns": [
+    "A is tempting but addresses other cafes, not this specific argument's logic.",
+    "A is tempting but addresses other cafes' sales, not this cafe's visit frequency argument.",
+    "A is tempting but addresses other cafes' outcomes, not this specific argument's logical flaw."
+   ],
+   "concerns_resolved_toward_key": true,
+   "watch_flag": null,
+   "watch_flag_result": null,
+   "predicted_survivors": [
+    "A"
+   ],
+   "observed_tempting_set": [
+    "A"
+   ],
+   "survivor_prediction_match": true,
+   "two_survivor_floor": "not_required_d2",
+   "empirical_uniqueness": "STRONG (unanimous key selection; every stated concern subordinated the alternate to the key)",
+   "proposed_disposition": "ACCEPT",
+   "disposition_conditions": [
+    "A5 named-human acceptance",
+    "A7 named-human anchored adjudication with required finding (not one level easier, R3)"
+   ]
+  },
+  {
+   "item_id": "AR_TAX_0007",
+   "key": "B",
+   "target_difficulty": 2,
+   "n_records": 3,
+   "convergence": "3/3",
+   "selections": {
+    "B": 3
+   },
+   "second_choices": {
+    "A": 3
+   },
+   "confidence": {
+    "high": 3
+   },
+   "perceived_difficulty": {
+    "values": [
+     2,
+     2,
+     2
+    ],
+    "mean": 2,
+    "target": 2,
+    "discriminating": false
+   },
+   "alternate_answer_concerns": [
+    "Choice A is tempting because it directly attacks causal reasoning, but it offers no concrete alternative explanation, making it weaker than B.",
+    "A is tempting but merely restates the logical flaw abstractly rather than providing a concrete alternative cause.",
+    "A is tempting but is an abstract logical principle rather than a specific fact that weakens the argument\u2014LSAT weakeners need concrete alternative explanations."
+   ],
+   "concerns_resolved_toward_key": true,
+   "watch_flag": "A: solvers sometimes over-credit the maxim; it changes nothing about which cause operated.",
+   "watch_flag_result": "confirmed_and_resolved",
+   "predicted_survivors": [
+    "A"
+   ],
+   "observed_tempting_set": [
+    "A"
+   ],
+   "survivor_prediction_match": true,
+   "two_survivor_floor": "not_required_d2",
+   "empirical_uniqueness": "STRONG (unanimous key selection; every stated concern subordinated the alternate to the key)",
+   "proposed_disposition": "ACCEPT",
+   "disposition_conditions": [
+    "A5 named-human acceptance",
+    "A7 named-human anchored adjudication with required finding (not one level easier, R3)"
+   ]
+  },
+  {
+   "item_id": "AR_TAX_0008",
+   "key": "E",
+   "target_difficulty": 4,
+   "n_records": 3,
+   "convergence": "3/3",
+   "selections": {
+    "E": 3
+   },
+   "second_choices": {
+    "A": 3
+   },
+   "confidence": {
+    "high": 3
+   },
+   "perceived_difficulty": {
+    "values": [
+     2,
+     2,
+     2
+    ],
+    "mean": 2,
+    "target": 4,
+    "discriminating": false
+   },
+   "alternate_answer_concerns": [
+    "A is tempting but too strong\u2014it says 'every project,' making it a sufficient condition rather than a necessary assumption.",
+    "A is tempting but states a universal claim stronger than what the argument needs.",
+    "A is tempting but too strong\u2014it claims the Fund supports EVERY qualifying project, which the argument doesn't require."
+   ],
+   "concerns_resolved_toward_key": true,
+   "watch_flag": "A: strong-sounding; the necessity/sufficiency separation is the tested skill. Monitor.",
+   "watch_flag_result": "confirmed_and_resolved",
+   "predicted_survivors": [
+    "A",
+    "B"
+   ],
+   "observed_tempting_set": [
+    "A"
+   ],
+   "survivor_prediction_match": true,
+   "two_survivor_floor": "UNVERIFIED_single_model_uniform_runner_up",
+   "empirical_uniqueness": "STRONG (unanimous key selection; every stated concern subordinated the alternate to the key)",
+   "proposed_disposition": "ACCEPT",
+   "disposition_conditions": [
+    "A5 named-human acceptance",
+    "A7 named-human anchored adjudication with required finding",
+    "recommended: 1-2 key-naive human solve records to give A7 discriminating difficulty signal and to test the two-survivor floor"
+   ]
+  },
+  {
+   "item_id": "AR_TAX_0009",
+   "key": "C",
+   "target_difficulty": 4,
+   "n_records": 3,
+   "convergence": "3/3",
+   "selections": {
+    "C": 3
+   },
+   "second_choices": {
+    "B": 3
+   },
+   "confidence": {
+    "high": 3
+   },
+   "perceived_difficulty": {
+    "values": [
+     2,
+     2,
+     2
+    ],
+    "mean": 2,
+    "target": 4,
+    "discriminating": false
+   },
+   "alternate_answer_concerns": [
+    "B is tempting but overreaches since non-certified orchards may escape inspection and thus the reporting rule.",
+    "B is tempting but overclaims since we only know most, not all, Calder Valley orchards are certified organic.",
+    "B is tempting but overclaims since we only know 'most' are certified organic, leaving some potentially non-inspected orchards that could be exempt."
+   ],
+   "concerns_resolved_toward_key": true,
+   "watch_flag": null,
+   "watch_flag_result": null,
+   "predicted_survivors": [
+    "A",
+    "B"
+   ],
+   "observed_tempting_set": [
+    "B"
+   ],
+   "survivor_prediction_match": true,
+   "two_survivor_floor": "UNVERIFIED_single_model_uniform_runner_up",
+   "empirical_uniqueness": "STRONG (unanimous key selection; every stated concern subordinated the alternate to the key)",
+   "proposed_disposition": "ACCEPT",
+   "disposition_conditions": [
+    "A5 named-human acceptance",
+    "A7 named-human anchored adjudication with required finding (not one level easier, R3)",
+    "recommended: 1-2 key-naive human solve records to give A7 discriminating difficulty signal and to test the two-survivor floor"
+   ]
+  }
+ ]
+}

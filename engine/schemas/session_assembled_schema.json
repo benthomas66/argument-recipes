@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Session Assembled Event",
+  "description": "Spec 04 §18 session-level assembly record. One per assembled adaptive session; pairs with the per-item item_selected records. seed is nullable (an unseeded assembly logs null). Determinism per Spec 04 §19.",
+  "type": "object",
+  "required": [
+    "session_id",
+    "session_type",
+    "algorithm_version",
+    "seed",
+    "slot_count",
+    "fallback_used",
+    "assembled_at"
+  ],
+  "properties": {
+    "session_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "session_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "algorithm_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "seed": {
+      "type": ["string", "null"]
+    },
+    "slot_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "fallback_used": {
+      "type": "boolean"
+    },
+    "assembled_at": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": false
+}

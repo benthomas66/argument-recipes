@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "QA Factory Row",
+  "type": "object",
+  "required": [
+    "canonical_id",
+    "selected_answer",
+    "stored_correct_answer",
+    "match_TRUE_FALSE",
+    "confidence",
+    "solver_reasoning",
+    "ambiguity_concern",
+    "second_defensible_answer_concern",
+    "solver_separation_method"
+  ],
+  "properties": {
+    "canonical_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "selected_answer": {
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ]
+    },
+    "stored_correct_answer": {
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ]
+    },
+    "match_TRUE_FALSE": {
+      "type": "boolean"
+    },
+    "confidence": {
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "solver_reasoning": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ambiguity_concern": {
+      "type": "boolean"
+    },
+    "second_defensible_answer_concern": {
+      "type": "boolean"
+    },
+    "solver_separation_method": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": false
+}

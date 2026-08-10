@@ -1,0 +1,201 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Argument Recipes Run Manifest",
+  "type": "object",
+  "required": [
+    "run_id",
+    "schema_version",
+    "spec_version",
+    "run_type",
+    "created_at",
+    "created_by_process",
+    "repo_commit_sha_or_unknown",
+    "rerun_policy",
+    "batch_number",
+    "batch_size_target",
+    "source_bank_name",
+    "source_bank_file_hash",
+    "output_prefix",
+    "canonical_id_start",
+    "canonical_id_end",
+    "validated_allowed",
+    "published_allowed",
+    "factory_status_authority",
+    "allow_partial",
+    "expected_artifacts"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "pattern": "^AR_V1_B\\d{2,}_\\d{8}T\\d{6}Z_[a-f0-9]{8}$"
+    },
+    "schema_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "spec_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "run_type": {
+      "enum": [
+        "corpus_driven_from_scratch_factory",
+        "import_validation",
+        "admin_publish_release"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "minLength": 1
+    },
+    "created_by_process": {
+      "type": "string",
+      "minLength": 1
+    },
+    "repo_commit_sha_or_unknown": {
+      "type": "string",
+      "minLength": 1
+    },
+    "rerun_policy": {
+      "enum": [
+        "overwrite_same_output",
+        "create_explicit_rerun_suffix",
+        "stop_if_output_exists"
+      ]
+    },
+    "batch_number": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "batch_size_target": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "source_bank_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_bank_file_hash": {
+      "type": "string",
+      "pattern": "^[a-fA-F0-9]{64}$"
+    },
+    "prior_inventory_file": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "prior_inventory_file_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "prior_coverage_file": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "prior_coverage_file_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "prior_generated_items_file": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "prior_generated_items_file_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "output_prefix": {
+      "type": "string",
+      "minLength": 1
+    },
+    "canonical_id_start": {
+      "type": "string",
+      "pattern": "^(AR_V1_B\\d+|AR_TAX)_\\d{4}$"
+    },
+    "canonical_id_end": {
+      "type": "string",
+      "pattern": "^(AR_V1_B\\d+|AR_TAX)_\\d{4}$"
+    },
+    "validated_allowed": {
+      "type": "boolean"
+    },
+    "published_allowed": {
+      "type": "boolean"
+    },
+    "allow_partial": {
+      "type": "boolean"
+    },
+    "factory_status_authority": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "playable_draft",
+          "playable_draft_hold",
+          "validated_candidate"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "expected_artifacts": {
+      "type": "object",
+      "required": [
+        "source_pattern_inventory",
+        "production_coverage_plan",
+        "batch_selection_log",
+        "normalized_blueprints",
+        "generated_items_csv",
+        "generated_items_workbook",
+        "qa_factory_table",
+        "validation_report",
+        "repair_log",
+        "import_package"
+      ],
+      "properties": {
+        "source_pattern_inventory": {
+          "type": "string"
+        },
+        "production_coverage_plan": {
+          "type": "string"
+        },
+        "batch_selection_log": {
+          "type": "string"
+        },
+        "normalized_blueprints": {
+          "type": "string"
+        },
+        "generated_items_csv": {
+          "type": "string"
+        },
+        "generated_items_workbook": {
+          "type": "string"
+        },
+        "qa_factory_table": {
+          "type": "string"
+        },
+        "validation_report": {
+          "type": "string"
+        },
+        "repair_log": {
+          "type": "string"
+        },
+        "import_package": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

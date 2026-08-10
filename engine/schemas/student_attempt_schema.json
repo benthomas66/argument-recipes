@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Student Attempt Event",
+  "type": "object",
+  "required": [
+    "attempt_id",
+    "user_id",
+    "canonical_id",
+    "content_version",
+    "session_id",
+    "session_type",
+    "selected_answer",
+    "correct_answer_at_attempt",
+    "is_correct",
+    "selected_trap_label",
+    "selected_trap_family",
+    "response_time_ms",
+    "confidence_self_report",
+    "submitted_at",
+    "scoring_context"
+  ],
+  "properties": {
+    "attempt_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "user_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "canonical_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "content_version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "session_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "session_type": {
+      "enum": [
+        "diagnostic",
+        "daily_repair",
+        "targeted_drill",
+        "missed_trap_review",
+        "timed_practice"
+      ]
+    },
+    "selected_answer": {
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ]
+    },
+    "correct_answer_at_attempt": {
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ]
+    },
+    "is_correct": {
+      "type": "boolean"
+    },
+    "selected_trap_label": {
+      "type": "string"
+    },
+    "selected_trap_family": {
+      "type": "string"
+    },
+    "response_time_ms": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "confidence_self_report": {
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "not_collected"
+      ]
+    },
+    "submitted_at": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scoring_context": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

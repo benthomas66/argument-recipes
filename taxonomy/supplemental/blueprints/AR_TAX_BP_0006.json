@@ -1,0 +1,107 @@
+{
+ "blueprint_id": "AR_TAX_BP_0006",
+ "reserved_item_id": "AR_TAX_0006",
+ "provenance_class": "taxonomy_only",
+ "governing_ruling": "docs/patches/TAXONOMY_SUPPLEMENT_RULINGS_V1.md",
+ "packet": "docs/specs/SUPPLEMENTAL_BLUEPRINT_PACKET_V1.md",
+ "cell": {
+  "question_type": "WK",
+  "target_difficulty": 2
+ },
+ "recipe": {
+  "recipe_id": "WEAKEN_ATTACK_KEY_LINK",
+  "recipe_title": "Weaken by Breaking the Link",
+  "seed_row": "db/seeds/0002_recipes_seed.sql#WEAKEN_ATTACK_KEY_LINK"
+ },
+ "credited_answer_job": "Sever the single evidence-to-conclusion link the argument relies on.",
+ "argument_form": "One evidential claim, one conclusion, one load-bearing link (d2).",
+ "trap_plan": [
+  {
+   "slot": 1,
+   "trap_family": "Scope Failure",
+   "mechanism": "Attacks a stronger claim than the one concluded.",
+   "blind_solve_survivor": true,
+   "seed_row": "db/seeds/0001_trap_taxonomy_seed.sql#Scope Failure"
+  },
+  {
+   "slot": 2,
+   "trap_family": "Direction Failure",
+   "mechanism": "Strengthens the argument.",
+   "blind_solve_survivor": false,
+   "seed_row": "db/seeds/0001_trap_taxonomy_seed.sql#Direction Failure"
+  },
+  {
+   "slot": 3,
+   "trap_family": "Comparison Failure",
+   "mechanism": "Unfavorable comparison that leaves the link intact.",
+   "blind_solve_survivor": false,
+   "seed_row": "db/seeds/0001_trap_taxonomy_seed.sql#Comparison Failure"
+  },
+  {
+   "slot": 4,
+   "trap_family": "Relevance Failure",
+   "mechanism": "Negative fact aimed at the wrong target (permitted weaker slot).",
+   "blind_solve_survivor": false,
+   "seed_row": "db/seeds/0001_trap_taxonomy_seed.sql#Relevance Failure"
+  }
+ ],
+ "trap_plan_constraints": {
+  "same_family_attractive_min": 3,
+  "eliminable_max": 1,
+  "blind_solve_survivors_min": 0
+ },
+ "structural_spec": {
+  "moving_parts_min": 3,
+  "stimulus_length_band": "short",
+  "word_floor": 45,
+  "reasoning_density": "moderate",
+  "standard": "docs/patches/CONTENT_DIFFICULTY_CALIBRATION_V1.md"
+ },
+ "taxonomy_basis": {
+  "recipe_rows": [
+   "WEAKEN_ATTACK_KEY_LINK"
+  ],
+  "trap_rows": [
+   "Scope Failure",
+   "Direction Failure",
+   "Comparison Failure",
+   "Relevance Failure"
+  ]
+ },
+ "authoring": {
+  "method": "source_isolated_ai_assisted_draft_human_accepted",
+  "ai_assistance": true,
+  "ai_assistance_disclosure": "AI drafting permitted under rulings section 4-5; disclosed per item at acceptance",
+  "responsible_human": "operator (named at acceptance)",
+  "no_source_consulted_confirmation_required": true,
+  "excluded_sources": [
+   "original_bank",
+   "june2007",
+   "pt86",
+   "any other LSAT item surface"
+  ]
+ },
+ "difficulty_evidence_plan": {
+  "difficulty_status": "prepublication_expert_calibrated",
+  "blind_solve_min": 3,
+  "adjudicator": "named qualified human (Spec 07 section 10.2)",
+  "empirical_confirmation_required": true,
+  "same_cell_clean_anchors": [],
+  "anchor_gap_flag": true,
+  "proposed_bracket": {
+   "cross_type_d2": [
+    "AR_V1_B3_0002",
+    "AR_V1_B4_0004"
+   ],
+   "same_type_d3": [
+    "AR_V1_B1_0003",
+    "AR_V1_B2_0003",
+    "AR_V1_B5_0010"
+   ]
+  },
+  "bracket_ratified": true,
+  "ratified_by": "docs/patches/DIFFICULTY_EVIDENCE_RULINGS_V1.md#R3",
+  "not_one_level_easier_finding_required": true
+ },
+ "prohibited_now": "No item prose at this stage (rulings section 10)."
+}

@@ -1,0 +1,15 @@
+# OS / editor
+.DS_Store
+*.log
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+*.egg-info/
+
+# Never commit source material or secrets
+/source_banks/
+.env
+.env.*

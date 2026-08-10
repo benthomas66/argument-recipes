@@ -1,0 +1,117 @@
+{
+ "blueprint_id": "AR_TAX_BP_0004",
+ "reserved_item_id": "AR_TAX_0004",
+ "provenance_class": "taxonomy_only",
+ "governing_ruling": "docs/patches/TAXONOMY_SUPPLEMENT_RULINGS_V1.md",
+ "packet": "docs/specs/SUPPLEMENTAL_BLUEPRINT_PACKET_V1.md",
+ "cell": {
+  "question_type": "PF",
+  "target_difficulty": 3
+ },
+ "recipe": {
+  "recipe_id": "PARALLEL_FLAW",
+  "recipe_title": "Match the Flawed Pattern",
+  "seed_row": "db/seeds/0002_recipes_seed.sql#PARALLEL_FLAW"
+ },
+ "credited_answer_job": "Select the choice committing the same reasoning flaw as the stimulus argument.",
+ "argument_form": "Stimulus commits affirming-the-consequent inside a causal frame (if cause then effect; effect observed; therefore cause); credited choice replicates exactly that flaw in a different domain.",
+ "trap_plan": [
+  {
+   "slot": 1,
+   "trap_family": "Form Failure",
+   "mechanism": "Valid look-alike: correct modus ponens dressed in matching surface content.",
+   "blind_solve_survivor": true,
+   "seed_row": "db/seeds/0001_trap_taxonomy_seed.sql#Form Failure"
+  },
+  {
+   "slot": 2,
+   "trap_family": "Parallel Failure",
+   "mechanism": "A different flaw with similar texture: denies the antecedent instead.",
+   "blind_solve_survivor": true,
+   "seed_row": "db/seeds/0001_trap_taxonomy_seed.sql#Parallel Failure"
+  },
+  {
+   "slot": 3,
+   "trap_family": "Conditional Failure",
+   "mechanism": "Correct contrapositive reasoning positioned to be misread as flawed.",
+   "blind_solve_survivor": false,
+   "seed_row": "db/seeds/0001_trap_taxonomy_seed.sql#Conditional Failure"
+  },
+  {
+   "slot": 4,
+   "trap_family": "Scope Failure",
+   "mechanism": "Hasty-generalization flaw instead of the conditional flaw (permitted weaker slot).",
+   "blind_solve_survivor": false,
+   "seed_row": "db/seeds/0001_trap_taxonomy_seed.sql#Scope Failure"
+  }
+ ],
+ "trap_plan_constraints": {
+  "same_family_attractive_min": 3,
+  "eliminable_max": 1,
+  "blind_solve_survivors_min": 2
+ },
+ "structural_spec": {
+  "moving_parts_min": 3,
+  "stimulus_length_band": "short",
+  "word_floor": 45,
+  "reasoning_density": "moderate",
+  "standard": "docs/patches/CONTENT_DIFFICULTY_CALIBRATION_V1.md",
+  "first_principles_d3_frame": "d4 parallel-flaw items in the clean anchor set stack a quantifier shift on top of the conditional error or embed the flaw across speakers; d3 is a single canonical conditional flaw with one valid decoy and one wrong-flaw decoy."
+ },
+ "taxonomy_basis": {
+  "recipe_rows": [
+   "PARALLEL_FLAW"
+  ],
+  "trap_rows": [
+   "Form Failure",
+   "Parallel Failure",
+   "Conditional Failure",
+   "Scope Failure"
+  ]
+ },
+ "authoring": {
+  "method": "source_isolated_ai_assisted_draft_human_accepted",
+  "ai_assistance": true,
+  "ai_assistance_disclosure": "AI drafting permitted under rulings section 4-5; disclosed per item at acceptance",
+  "responsible_human": "operator (named at acceptance)",
+  "no_source_consulted_confirmation_required": true,
+  "excluded_sources": [
+   "original_bank",
+   "june2007",
+   "pt86",
+   "any other LSAT item surface"
+  ]
+ },
+ "difficulty_evidence_plan": {
+  "difficulty_status": "prepublication_expert_calibrated_one_sided",
+  "method": "one_sided_upper_bracket_R4",
+  "blind_solve_min": 5,
+  "adjudicator": "named qualified human (Spec 07 section 10.2)",
+  "empirical_confirmation_required": true,
+  "same_cell_clean_anchors": [],
+  "anchor_gap_flag": true,
+  "bracket_ratified": true,
+  "ratified_by": "docs/patches/DIFFICULTY_EVIDENCE_RULINGS_V1.md#R4",
+  "upper_anchors_d4": [
+   "AR_V1_B1_0017",
+   "AR_V1_B2_0017",
+   "AR_V1_B2_0018",
+   "AR_V1_B6_0019",
+   "AR_V1_B10_0017"
+  ],
+  "cross_type_d3_anchors": [
+   "AR_V1_B3_0003",
+   "AR_V1_B1_0003",
+   "AR_V1_B4_0010",
+   "AR_V1_B4_0007"
+  ],
+  "excluded_anchors": [
+   "AR_V1_B5_0019 (held, B4)",
+   "AR_V1_B4_0018 (pt86, unverifiable)",
+   "AR_V1_B7_0019 (pt86, unverifiable)",
+   "AR_V1_B7_0018 (june2007, unverifiable)"
+  ],
+  "first_principles_d3_vs_d4_analysis_required": true
+ },
+ "prohibited_now": "No item prose before schema validation of this blueprint (R6) and remaining stage gates."
+}

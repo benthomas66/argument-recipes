@@ -1,0 +1,89 @@
+{
+ "canonical_id": "AR_TAX_0001",
+ "blueprint_id": "AR_TAX_BP_0001",
+ "provenance_class": "taxonomy_only",
+ "governing_rulings": [
+  "docs/patches/TAXONOMY_SUPPLEMENT_RULINGS_V1.md",
+  "docs/patches/DIFFICULTY_EVIDENCE_RULINGS_V1.md"
+ ],
+ "content_state": "human_accepted_prepublication",
+ "publication_state": "unpublished",
+ "question_type": "ST",
+ "difficulty": 4,
+ "difficulty_status": "prepublication_expert_calibrated",
+ "normalized_recipe_id": "STRENGTHEN_SUPPORT_CAUSE",
+ "recipe_title": "Confirm the Proposed Mechanism",
+ "scenario": "transit planning",
+ "stimulus": "City transit planner: Ridership on the Elm Street bus line rose eleven percent in the six months after we widened the sidewalks along its route. Some colleagues credit the systemwide fare discount introduced around the same time. But that discount applied to every line in the network, while no other line gained riders at anything near that rate. The sidewalk project made walking to Elm Street stops easier, and that improved access is what drove the gain.",
+ "question_stem": "Which one of the following, if true, most strengthens the planner's argument?",
+ "choice_a": "After the sidewalks were widened, several regular Elm Street riders reported that they would have begun riding the line even without the improvements.",
+ "choice_b": "Boarding records show that nearly all of the additional Elm Street trips began at stops located within the blocks where sidewalks were widened, and few began elsewhere on the line.",
+ "choice_c": "Citywide surveys show that residents consider convenient access among the most important factors in choosing how to commute.",
+ "choice_d": "The eleven percent increase on Elm Street began in the very month that the sidewalk project was completed.",
+ "choice_e": "The Elm Street line now carries more riders than the Oak Avenue line, which serves a similar number of households.",
+ "correct_answer": "B",
+ "prediction_text": "Find new evidence tying the ridership gain specifically to easier walking access, not to timing or general preferences.",
+ "trap_a": "undermines the mechanism (survivor)",
+ "trap_b": null,
+ "trap_c": "supports a broader claim than the concluded link (survivor)",
+ "trap_d": "restates the timing correlation as support",
+ "trap_e": "comparison that never touches the mechanism",
+ "trap_family_a": "Direction Failure",
+ "trap_family_b": null,
+ "trap_family_c": "Scope Failure",
+ "trap_family_d": "Causal Failure",
+ "trap_family_e": "Comparison Failure",
+ "explanation_a": "Riders saying they would have come anyway cuts against improved access as the driver; it weakens rather than strengthens.",
+ "explanation_b": "Correct. Locating the new trips at the widened-sidewalk stops directly confirms the access mechanism the planner proposes.",
+ "explanation_c": "A general preference for access citywide does not connect this line's specific gain to these sidewalks.",
+ "explanation_d": "The argument already rests on this timing; repeating the correlation adds no support for the causal claim.",
+ "explanation_e": "How Elm Street compares with another line says nothing about why Elm Street's own ridership rose.",
+ "authoring_record": {
+  "method": "source_isolated_ai_assisted_draft_human_accepted",
+  "ai_assistance": true,
+  "ai_drafter": "Claude (governor session, v43)",
+  "inputs": [
+   "db/seeds/0001_trap_taxonomy_seed.sql",
+   "db/seeds/0002_recipes_seed.sql",
+   "docs/patches/CONTENT_DIFFICULTY_CALIBRATION_V1.md",
+   "data/supplemental_taxonomy/AR_TAX_BP_0001.json"
+  ],
+  "no_source_consulted": "No source question surface (original_bank, june2007, pt86, or any other LSAT item) was opened, read, or consulted in drafting. No bank item prose was examined.",
+  "responsible_human_acceptance": "ACCEPTED - operator (Ben), 2026-07-16, docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-3"
+ },
+ "drafter_self_qa": {
+  "disclosed": "Drafter self-QA is NOT blind (author context); it satisfies no D2 evidence requirement.",
+  "stimulus_wordcount": 77,
+  "moving_parts_claimed": 5,
+  "expected_blind_solve_survivors": [
+   "A",
+   "C"
+  ]
+ },
+ "adjudication_ref": "adjudication_record_v1.json",
+ "difficulty_evidence_limitation": "See adjudication_record_v1.json: provisional expert calibration; empirical confirmation after beta required; not psychometrically validated.",
+ "completed_human_stages": {
+  "A5": "ACCEPT (2026-07-16)",
+  "A6": "PASS (2026-07-16)",
+  "A7": "label retained (2026-07-16)"
+ },
+ "next_gates": [
+  "A8 reconciliation fold (operator instruction required)",
+  "A9 attestation",
+  "A10 refused"
+ ],
+ "adjudication": {
+  "a5": "ACCEPT",
+  "a6": "PASS",
+  "a7_label": 4,
+  "difficulty_status": "prepublication_expert_calibrated",
+  "finding": "not_one_level_easier: NOT_AFFIRMED - waived for beta by operator ruling; folded into empirical-confirmation obligation (AD-5)",
+  "limitations": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-6",
+  "record": "adjudication_records_v1.json"
+ },
+ "remaining_gates": {
+  "A8": "provenance recording at import (reconciliation ledger untouched by adjudication)",
+  "A9": "Spec 07 section 9 human attestation",
+  "A10": "publication refused pending Spec 07 approval + publication authorization + beta-assembly gates"
+ }
+}

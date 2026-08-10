@@ -1,0 +1,222 @@
+{
+ "artifact": "adjudication_records",
+ "version": "v1",
+ "adjudicator": "operator (Ben)",
+ "date": "2026-07-16",
+ "ruling": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md",
+ "evidence": {
+  "solve_records": "blinded_solve_records_v1.json",
+  "compilation": "empirical_review_compilation_v1.json",
+  "structural": "calibration_self_report.json",
+  "formal_core": "verify_mss_formal_core.py PASS at v42 and v43"
+ },
+ "items": [
+  {
+   "item_id": "AR_TAX_0001",
+   "a5": {
+    "decision": "ACCEPT",
+    "acceptor": "operator (Ben)",
+    "date": "2026-07-16",
+    "ref": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-3"
+   },
+   "a6": {
+    "decision": "PASS",
+    "basis": "v45 empirical uniqueness (31/31 convergence; concerns resolved) + structural floors + formal core (0009)",
+    "ref": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-2,AD-3"
+   },
+   "a7": {
+    "label": 4,
+    "difficulty_status": "prepublication_expert_calibrated",
+    "basis": "provisional label retained on blueprint and anchor analysis (AD-3)",
+    "finding": "not_one_level_easier: NOT_AFFIRMED - waived for beta by operator ruling; folded into empirical-confirmation obligation (AD-5)",
+    "limitations": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-6: no key-naive human difficulty evidence; model solve data non-discriminating for difficulty; d3/d4 labels require empirical confirmation after beta usage; not psychometrically validated"
+   },
+   "disposition": "ACCEPT",
+   "state": "human_accepted_prepublication"
+  },
+  {
+   "item_id": "AR_TAX_0002",
+   "a5": {
+    "decision": "ACCEPT",
+    "acceptor": "operator (Ben)",
+    "date": "2026-07-16",
+    "ref": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-3"
+   },
+   "a6": {
+    "decision": "PASS",
+    "basis": "v45 empirical uniqueness (31/31 convergence; concerns resolved) + structural floors + formal core (0009)",
+    "ref": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-2,AD-3"
+   },
+   "a7": {
+    "label": 4,
+    "difficulty_status": "prepublication_expert_calibrated",
+    "basis": "provisional label retained on blueprint and anchor analysis (AD-3)",
+    "finding": "not_one_level_easier: NOT_AFFIRMED - waived for beta by operator ruling; folded into empirical-confirmation obligation (AD-5)",
+    "limitations": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-6: no key-naive human difficulty evidence; model solve data non-discriminating for difficulty; d3/d4 labels require empirical confirmation after beta usage; not psychometrically validated"
+   },
+   "disposition": "ACCEPT",
+   "state": "human_accepted_prepublication"
+  },
+  {
+   "item_id": "AR_TAX_0003",
+   "a5": {
+    "decision": "ACCEPT",
+    "acceptor": "operator (Ben)",
+    "date": "2026-07-16",
+    "ref": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-3"
+   },
+   "a6": {
+    "decision": "PASS",
+    "basis": "v45 empirical uniqueness (31/31 convergence; concerns resolved) + structural floors + formal core (0009)",
+    "ref": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-2,AD-3"
+   },
+   "a7": {
+    "label": 3,
+    "difficulty_status": "prepublication_expert_calibrated_one_sided",
+    "basis": "provisional label retained on blueprint and anchor analysis (AD-3)",
+    "finding": "d3_not_d4: AFFIRMED via operator adoption of the drafted first-principles analysis (AD-4)",
+    "limitations": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-6: no key-naive human difficulty evidence; model solve data non-discriminating for difficulty; d3/d4 labels require empirical confirmation after beta usage; not psychometrically validated"
+   },
+   "disposition": "ACCEPT",
+   "state": "human_accepted_prepublication"
+  },
+  {
+   "item_id": "AR_TAX_0004",
+   "a5": {
+    "decision": "ACCEPT",
+    "acceptor": "operator (Ben)",
+    "date": "2026-07-16",
+    "ref": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-3"
+   },
+   "a6": {
+    "decision": "PASS",
+    "basis": "v45 empirical uniqueness (31/31 convergence; concerns resolved) + structural floors + formal core (0009)",
+    "ref": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-2,AD-3"
+   },
+   "a7": {
+    "label": 3,
+    "difficulty_status": "prepublication_expert_calibrated_one_sided",
+    "basis": "provisional label retained on blueprint and anchor analysis (AD-3)",
+    "finding": "d3_not_d4: AFFIRMED via operator adoption of the drafted first-principles analysis (AD-4)",
+    "limitations": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-6: no key-naive human difficulty evidence; model solve data non-discriminating for difficulty; d3/d4 labels require empirical confirmation after beta usage; not psychometrically validated"
+   },
+   "disposition": "ACCEPT",
+   "state": "human_accepted_prepublication"
+  },
+  {
+   "item_id": "AR_TAX_0005",
+   "a5": {
+    "decision": "ACCEPT",
+    "acceptor": "operator (Ben)",
+    "date": "2026-07-16",
+    "ref": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-3"
+   },
+   "a6": {
+    "decision": "PASS",
+    "basis": "v45 empirical uniqueness (31/31 convergence; concerns resolved) + structural floors + formal core (0009)",
+    "ref": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-2,AD-3"
+   },
+   "a7": {
+    "label": 2,
+    "difficulty_status": "prepublication_expert_calibrated",
+    "basis": "provisional label retained on blueprint and anchor analysis (AD-3)",
+    "finding": "no special finding required (named same-cell anchors)",
+    "limitations": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-6: no key-naive human difficulty evidence; model solve data non-discriminating for difficulty; d3/d4 labels require empirical confirmation after beta usage; not psychometrically validated"
+   },
+   "disposition": "ACCEPT",
+   "state": "human_accepted_prepublication"
+  },
+  {
+   "item_id": "AR_TAX_0006",
+   "a5": {
+    "decision": "ACCEPT",
+    "acceptor": "operator (Ben)",
+    "date": "2026-07-16",
+    "ref": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-3"
+   },
+   "a6": {
+    "decision": "PASS",
+    "basis": "v45 empirical uniqueness (31/31 convergence; concerns resolved) + structural floors + formal core (0009)",
+    "ref": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-2,AD-3"
+   },
+   "a7": {
+    "label": 2,
+    "difficulty_status": "prepublication_expert_calibrated",
+    "basis": "provisional label retained on blueprint and anchor analysis (AD-3)",
+    "finding": "not_one_level_easier: NOT_AFFIRMED - waived for beta by operator ruling; folded into empirical-confirmation obligation (AD-5)",
+    "limitations": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-6: no key-naive human difficulty evidence; model solve data non-discriminating for difficulty; d3/d4 labels require empirical confirmation after beta usage; not psychometrically validated"
+   },
+   "disposition": "ACCEPT",
+   "state": "human_accepted_prepublication"
+  },
+  {
+   "item_id": "AR_TAX_0007",
+   "a5": {
+    "decision": "ACCEPT",
+    "acceptor": "operator (Ben)",
+    "date": "2026-07-16",
+    "ref": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-3"
+   },
+   "a6": {
+    "decision": "PASS",
+    "basis": "v45 empirical uniqueness (31/31 convergence; concerns resolved) + structural floors + formal core (0009)",
+    "ref": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-2,AD-3"
+   },
+   "a7": {
+    "label": 2,
+    "difficulty_status": "prepublication_expert_calibrated",
+    "basis": "provisional label retained on blueprint and anchor analysis (AD-3)",
+    "finding": "not_one_level_easier: NOT_AFFIRMED - waived for beta by operator ruling; folded into empirical-confirmation obligation (AD-5)",
+    "limitations": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-6: no key-naive human difficulty evidence; model solve data non-discriminating for difficulty; d3/d4 labels require empirical confirmation after beta usage; not psychometrically validated"
+   },
+   "disposition": "ACCEPT",
+   "state": "human_accepted_prepublication"
+  },
+  {
+   "item_id": "AR_TAX_0008",
+   "a5": {
+    "decision": "ACCEPT",
+    "acceptor": "operator (Ben)",
+    "date": "2026-07-16",
+    "ref": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-3"
+   },
+   "a6": {
+    "decision": "PASS",
+    "basis": "v45 empirical uniqueness (31/31 convergence; concerns resolved) + structural floors + formal core (0009)",
+    "ref": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-2,AD-3"
+   },
+   "a7": {
+    "label": 4,
+    "difficulty_status": "prepublication_expert_calibrated",
+    "basis": "provisional label retained on blueprint and anchor analysis (AD-3)",
+    "finding": "no special finding required (named same-cell anchors)",
+    "limitations": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-6: no key-naive human difficulty evidence; model solve data non-discriminating for difficulty; d3/d4 labels require empirical confirmation after beta usage; not psychometrically validated"
+   },
+   "disposition": "ACCEPT",
+   "state": "human_accepted_prepublication"
+  },
+  {
+   "item_id": "AR_TAX_0009",
+   "a5": {
+    "decision": "ACCEPT",
+    "acceptor": "operator (Ben)",
+    "date": "2026-07-16",
+    "ref": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-3"
+   },
+   "a6": {
+    "decision": "PASS",
+    "basis": "v45 empirical uniqueness (31/31 convergence; concerns resolved) + structural floors + formal core (0009)",
+    "ref": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-2,AD-3"
+   },
+   "a7": {
+    "label": 4,
+    "difficulty_status": "prepublication_expert_calibrated",
+    "basis": "provisional label retained on blueprint and anchor analysis (AD-3)",
+    "finding": "not_one_level_easier: NOT_AFFIRMED - waived for beta by operator ruling; folded into empirical-confirmation obligation (AD-5)",
+    "limitations": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-6: no key-naive human difficulty evidence; model solve data non-discriminating for difficulty; d3/d4 labels require empirical confirmation after beta usage; not psychometrically validated"
+   },
+   "disposition": "ACCEPT",
+   "state": "human_accepted_prepublication"
+  }
+ ]
+}

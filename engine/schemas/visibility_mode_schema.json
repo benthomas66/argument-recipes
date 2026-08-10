@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Visibility Mode Rule",
+  "type": "object",
+  "required": [
+    "mode",
+    "visible_publication_states",
+    "visible_content_states",
+    "includes_holds",
+    "description"
+  ],
+  "properties": {
+    "mode": {
+      "enum": [
+        "production_student",
+        "internal_beta",
+        "admin_qa",
+        "factory_import"
+      ]
+    },
+    "visible_publication_states": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "unpublished",
+          "published",
+          "retired",
+          "superseded"
+        ]
+      }
+    },
+    "visible_content_states": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "blueprint",
+          "playable_draft",
+          "playable_draft_hold",
+          "validated_candidate",
+          "validated"
+        ]
+      }
+    },
+    "includes_holds": {
+      "type": "boolean"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

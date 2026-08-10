@@ -1,0 +1,243 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Source Pattern Inventory Row",
+  "type": "object",
+  "required": [
+    "source_question_number",
+    "source_position_in_file",
+    "readability_status",
+    "answer_choices_present",
+    "answer_key_present",
+    "source_question_type_if_known",
+    "inferred_question_type",
+    "difficulty_estimate_1_to_5",
+    "difficulty_rationale",
+    "abstract_pattern_id",
+    "recipe_id",
+    "recipe_title",
+    "plain_english_pattern",
+    "stimulus_structure_abstract",
+    "conclusion_role",
+    "support_structure",
+    "gap_or_inference",
+    "correct_answer_job",
+    "credited_answer_logic_abstract",
+    "trap_architecture",
+    "wrong_answer_trap_1",
+    "wrong_answer_trap_1_family",
+    "wrong_answer_trap_2",
+    "wrong_answer_trap_2_family",
+    "wrong_answer_trap_3",
+    "wrong_answer_trap_3_family",
+    "wrong_answer_trap_4",
+    "wrong_answer_trap_4_family",
+    "stimulus_length_band",
+    "reasoning_density",
+    "moving_parts_count",
+    "complexity_drivers",
+    "answer_choice_difficulty_profile",
+    "forbidden_surface_elements",
+    "surface_distance_requirement",
+    "v1_priority_level",
+    "generation_readiness",
+    "extraction_confidence",
+    "needs_review",
+    "decode_notes"
+  ],
+  "properties": {
+    "source_question_number": {
+      "type": [
+        "string",
+        "integer"
+      ]
+    },
+    "source_position_in_file": {
+      "type": [
+        "string",
+        "integer"
+      ]
+    },
+    "readability_status": {
+      "enum": [
+        "readable",
+        "unreadable",
+        "incomplete",
+        "duplicate_suspected"
+      ]
+    },
+    "answer_choices_present": {
+      "type": "boolean"
+    },
+    "answer_key_present": {
+      "type": "boolean"
+    },
+    "source_question_type_if_known": {
+      "type": "string",
+      "minLength": 1
+    },
+    "inferred_question_type": {
+      "enum": [
+        "FL",
+        "ST",
+        "WK",
+        "NA",
+        "SA",
+        "MBT",
+        "MSS",
+        "MC",
+        "MR",
+        "RC",
+        "PR",
+        "PA",
+        "PF",
+        "RP",
+        "EV",
+        "PI"
+      ]
+    },
+    "difficulty_estimate_1_to_5": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "difficulty_rationale": {
+      "type": "string",
+      "minLength": 1
+    },
+    "abstract_pattern_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "recipe_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "recipe_title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "plain_english_pattern": {
+      "type": "string",
+      "minLength": 1
+    },
+    "stimulus_structure_abstract": {
+      "type": "string",
+      "minLength": 1
+    },
+    "conclusion_role": {
+      "type": "string",
+      "minLength": 1
+    },
+    "support_structure": {
+      "type": "string",
+      "minLength": 1
+    },
+    "gap_or_inference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "correct_answer_job": {
+      "type": "string",
+      "minLength": 1
+    },
+    "credited_answer_logic_abstract": {
+      "type": "string",
+      "minLength": 1
+    },
+    "trap_architecture": {
+      "type": "string",
+      "minLength": 1
+    },
+    "wrong_answer_trap_1": {
+      "type": "string",
+      "minLength": 1
+    },
+    "wrong_answer_trap_1_family": {
+      "type": "string",
+      "minLength": 1
+    },
+    "wrong_answer_trap_2": {
+      "type": "string",
+      "minLength": 1
+    },
+    "wrong_answer_trap_2_family": {
+      "type": "string",
+      "minLength": 1
+    },
+    "wrong_answer_trap_3": {
+      "type": "string",
+      "minLength": 1
+    },
+    "wrong_answer_trap_3_family": {
+      "type": "string",
+      "minLength": 1
+    },
+    "wrong_answer_trap_4": {
+      "type": "string",
+      "minLength": 1
+    },
+    "wrong_answer_trap_4_family": {
+      "type": "string",
+      "minLength": 1
+    },
+    "stimulus_length_band": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reasoning_density": {
+      "type": "string",
+      "minLength": 1
+    },
+    "moving_parts_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "complexity_drivers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "answer_choice_difficulty_profile": {
+      "type": "string",
+      "minLength": 1
+    },
+    "forbidden_surface_elements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "surface_distance_requirement": {
+      "type": "string",
+      "minLength": 1
+    },
+    "v1_priority_level": {
+      "type": "string",
+      "minLength": 1
+    },
+    "generation_readiness": {
+      "enum": [
+        "generation_ready",
+        "needs_blueprint_repair",
+        "hold_for_later",
+        "unsafe_to_generate"
+      ]
+    },
+    "extraction_confidence": {
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "needs_review": {
+      "type": "boolean"
+    },
+    "decode_notes": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": false
+}

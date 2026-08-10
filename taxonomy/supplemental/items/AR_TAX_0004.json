@@ -1,0 +1,89 @@
+{
+ "canonical_id": "AR_TAX_0004",
+ "blueprint_id": "AR_TAX_BP_0004",
+ "provenance_class": "taxonomy_only",
+ "governing_rulings": [
+  "docs/patches/TAXONOMY_SUPPLEMENT_RULINGS_V1.md",
+  "docs/patches/DIFFICULTY_EVIDENCE_RULINGS_V1.md"
+ ],
+ "content_state": "human_accepted_prepublication",
+ "publication_state": "unpublished",
+ "question_type": "PF",
+ "difficulty": 3,
+ "difficulty_status": "prepublication_expert_calibrated_one_sided",
+ "normalized_recipe_id": "PARALLEL_FLAW",
+ "recipe_title": "Match the Flawed Pattern",
+ "scenario": "harbor industry",
+ "stimulus": "Whenever the harbor mill runs its night shift, the water outflow near the pier turns noticeably warm by evening. On Tuesday the outflow near the pier was noticeably warm by evening. So the harbor mill must have been running its night shift on Tuesday evening as well.",
+ "question_stem": "The flawed pattern of reasoning in the argument above is most similar to that in which one of the following?",
+ "choice_a": "Whenever the express train is late, the platform display shows a delay notice, and the display never shows one in error. The display is showing a delay notice. So the express train is late.",
+ "choice_b": "Whenever the orchard's irrigation system runs, the reservoir level drops by morning. The irrigation system did not run last night. So the reservoir level will not have dropped by morning.",
+ "choice_c": "Whenever the print shop calibrates its press, the proof sheets come out aligned. Today's proof sheets did not come out aligned. So the print shop did not calibrate its press today.",
+ "choice_d": "The last three winters in Dorsey County have been unusually mild. So winters in Dorsey County are becoming permanently milder.",
+ "choice_e": "Whenever the bakery tests a new sourdough recipe, the whole block smells of fresh bread by midmorning. On Friday the block smelled of fresh bread by midmorning. So the bakery must have been testing a new sourdough recipe on Friday.",
+ "correct_answer": "E",
+ "prediction_text": "Name the flaw first: the argument affirms the consequent - effect observed, cause inferred. Find the choice that commits exactly that.",
+ "trap_a": "valid look-alike; the no-error premise licenses the inference (survivor)",
+ "trap_b": "different flaw: denies the antecedent (survivor)",
+ "trap_c": "valid contrapositive positioned to look flawed",
+ "trap_d": "different flaw: hasty generalization",
+ "trap_e": null,
+ "trap_family_a": "Form Failure",
+ "trap_family_b": "Parallel Failure",
+ "trap_family_c": "Conditional Failure",
+ "trap_family_d": "Scope Failure",
+ "trap_family_e": null,
+ "explanation_a": "The added premise that the display never errs makes the notice sufficient for lateness; this reasoning is valid, not flawed.",
+ "explanation_b": "This denies the antecedent - a different conditional error from the one in the stimulus.",
+ "explanation_c": "This is a correct contrapositive inference; it only resembles a flaw.",
+ "explanation_d": "Projecting a permanent trend from three cases is a generalization flaw, not a conditional one.",
+ "explanation_e": "Correct. From the effect - the smell - it infers the stated cause, affirming the consequent exactly as the stimulus does.",
+ "authoring_record": {
+  "method": "source_isolated_ai_assisted_draft_human_accepted",
+  "ai_assistance": true,
+  "ai_drafter": "Claude (governor session, v43)",
+  "inputs": [
+   "db/seeds/0001_trap_taxonomy_seed.sql",
+   "db/seeds/0002_recipes_seed.sql",
+   "docs/patches/CONTENT_DIFFICULTY_CALIBRATION_V1.md",
+   "data/supplemental_taxonomy/AR_TAX_BP_0004.json"
+  ],
+  "no_source_consulted": "No source question surface (original_bank, june2007, pt86, or any other LSAT item) was opened, read, or consulted in drafting. No bank item prose was examined.",
+  "responsible_human_acceptance": "ACCEPTED - operator (Ben), 2026-07-16, docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-3"
+ },
+ "drafter_self_qa": {
+  "disclosed": "Drafter self-QA is NOT blind (author context); it satisfies no D2 evidence requirement.",
+  "stimulus_wordcount": 47,
+  "moving_parts_claimed": 3,
+  "expected_blind_solve_survivors": [
+   "A",
+   "B"
+  ]
+ },
+ "adjudication_ref": "adjudication_record_v1.json",
+ "difficulty_evidence_limitation": "See adjudication_record_v1.json: provisional expert calibration; empirical confirmation after beta required; not psychometrically validated.",
+ "completed_human_stages": {
+  "A5": "ACCEPT (2026-07-16)",
+  "A6": "PASS (2026-07-16)",
+  "A7": "label retained (2026-07-16)"
+ },
+ "next_gates": [
+  "A8 reconciliation fold (operator instruction required)",
+  "A9 attestation",
+  "A10 refused"
+ ],
+ "adjudication": {
+  "a5": "ACCEPT",
+  "a6": "PASS",
+  "a7_label": 3,
+  "difficulty_status": "prepublication_expert_calibrated_one_sided",
+  "finding": "d3_not_d4: AFFIRMED via operator adoption of the drafted first-principles analysis (AD-4)",
+  "limitations": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-6",
+  "record": "adjudication_records_v1.json"
+ },
+ "remaining_gates": {
+  "A8": "provenance recording at import (reconciliation ledger untouched by adjudication)",
+  "A9": "Spec 07 section 9 human attestation",
+  "A10": "publication refused pending Spec 07 approval + publication authorization + beta-assembly gates"
+ }
+}

@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Admin Transition Record",
+  "description": "Spec 05's published_new_version outcome is represented as a new content version row (version_state 'current') transitioning to publication_state 'published' while the prior version transitions to publication_state 'superseded'; it is not a distinct publication_state enum value.",
+  "type": "object",
+  "required": [
+    "transition_id",
+    "canonical_id",
+    "from_content_state",
+    "to_content_state",
+    "from_publication_state",
+    "to_publication_state",
+    "review_queue_state",
+    "actor_id",
+    "transition_reason",
+    "created_at"
+  ],
+  "properties": {
+    "transition_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "canonical_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "from_content_state": {
+      "enum": [
+        "blueprint",
+        "playable_draft",
+        "playable_draft_hold",
+        "validated_candidate",
+        "validated"
+      ]
+    },
+    "to_content_state": {
+      "enum": [
+        "blueprint",
+        "playable_draft",
+        "playable_draft_hold",
+        "validated_candidate",
+        "validated"
+      ]
+    },
+    "from_publication_state": {
+      "enum": [
+        "unpublished",
+        "published",
+        "retired",
+        "superseded"
+      ]
+    },
+    "to_publication_state": {
+      "enum": [
+        "unpublished",
+        "published",
+        "retired",
+        "superseded"
+      ]
+    },
+    "review_queue_state": {
+      "enum": [
+        "not_in_queue",
+        "awaiting_human_review",
+        "logic_repair_queue",
+        "surface_review_queue",
+        "minor_review_queue",
+        "final_publish_review",
+        "rollback_review_queue",
+        "closed"
+      ]
+    },
+    "actor_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "transition_reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "created_at": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authorization_flag": {
+      "description": "Explicit CLI authorization recorded per PROMOTION_ARCHITECTURE_V1 \u00a73: 'authorize-validate' on promotion events, 'authorize-publish' on publication events, null otherwise.",
+      "enum": [
+        "authorize-validate",
+        "authorize-publish",
+        null
+      ]
+    }
+  },
+  "additionalProperties": false
+}

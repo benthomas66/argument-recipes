@@ -1,0 +1,5 @@
+{
+  "w_mastery": 0.7,
+  "w_recency": 0.3,
+  "recent_miss_cap": 3
+}

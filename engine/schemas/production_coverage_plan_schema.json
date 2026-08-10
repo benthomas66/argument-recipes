@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Production Coverage Plan Row",
+  "type": "object",
+  "required": [
+    "target_category",
+    "target_count",
+    "sample_bank_count",
+    "already_generated_count",
+    "current_batch_selected_count",
+    "remaining_target_gap"
+  ],
+  "properties": {
+    "target_category": {
+      "type": "string",
+      "minLength": 1
+    },
+    "target_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "sample_bank_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "already_generated_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "current_batch_selected_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "remaining_target_gap": {
+      "type": "integer"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Mastery State",
+  "type": "object",
+  "required": [
+    "user_id",
+    "dimension_type",
+    "dimension_id",
+    "mastery_score",
+    "attempt_count",
+    "recent_accuracy",
+    "status",
+    "last_updated_at"
+  ],
+  "properties": {
+    "user_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dimension_type": {
+      "enum": [
+        "recipe",
+        "trap_family",
+        "question_type",
+        "difficulty"
+      ]
+    },
+    "dimension_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mastery_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "attempt_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "recent_accuracy": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "status": {
+      "enum": [
+        "new",
+        "weak",
+        "developing",
+        "stable",
+        "mastered",
+        "decayed"
+      ]
+    },
+    "last_attempt_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "last_updated_at": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": false
+}

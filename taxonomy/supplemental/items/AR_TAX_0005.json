@@ -1,0 +1,88 @@
+{
+ "canonical_id": "AR_TAX_0005",
+ "blueprint_id": "AR_TAX_BP_0005",
+ "provenance_class": "taxonomy_only",
+ "governing_rulings": [
+  "docs/patches/TAXONOMY_SUPPLEMENT_RULINGS_V1.md",
+  "docs/patches/DIFFICULTY_EVIDENCE_RULINGS_V1.md"
+ ],
+ "content_state": "human_accepted_prepublication",
+ "publication_state": "unpublished",
+ "question_type": "FL",
+ "difficulty": 2,
+ "difficulty_status": "prepublication_expert_calibrated",
+ "normalized_recipe_id": "FLAW_DESCRIBE",
+ "recipe_title": "Describe the Flaw",
+ "scenario": "city development",
+ "stimulus": "Columnist: The city council should not have approved the riverfront tower. In a large randomized survey of city residents conducted last month, nearly eighty percent said the tower would harm the city's character. A decision opposed by so clear a majority of residents cannot have been the right one.",
+ "question_stem": "The reasoning in the columnist's argument is most vulnerable to criticism on the grounds that the argument",
+ "choice_a": "takes the fact that a view is widely held to establish that the view is correct",
+ "choice_b": "relies on a sample of residents that is unlikely to be representative of the city as a whole",
+ "choice_c": "presents as a premise a claim that merely restates the argument's conclusion",
+ "choice_d": "draws a conclusion about all future development projects from evidence concerning a single tower",
+ "choice_e": "criticizes the council's decision without identifying the individual council members responsible for it",
+ "correct_answer": "A",
+ "prediction_text": "The evidence is popular opinion; the conclusion is about the decision's correctness. Predict: majority opposition does not establish wrongness.",
+ "trap_a": null,
+ "trap_b": "accuses a sampling flaw the stated survey design rules out (survivor)",
+ "trap_c": "mislabels the structure as circular",
+ "trap_d": "accuses an overgeneralization not made",
+ "trap_e": "true observation that names no reasoning error",
+ "trap_family_a": null,
+ "trap_family_b": "Misdescription",
+ "trap_family_c": "Structure Failure",
+ "trap_family_d": "Scope Failure",
+ "trap_family_e": "Relevance Failure",
+ "explanation_a": "Correct. The argument moves from how many oppose the decision to whether it was right - popularity offered as proof of correctness.",
+ "explanation_b": "The survey is described as large and randomized, so an unrepresentative-sample charge describes a flaw the argument does not commit.",
+ "explanation_c": "No premise restates the conclusion; the survey result is distinct from the claim that the approval was wrong.",
+ "explanation_d": "The conclusion concerns only this tower; no claim about future projects is drawn.",
+ "explanation_e": "Naming individual members is beside the point; omitting them is not a defect in the reasoning.",
+ "authoring_record": {
+  "method": "source_isolated_ai_assisted_draft_human_accepted",
+  "ai_assistance": true,
+  "ai_drafter": "Claude (governor session, v43)",
+  "inputs": [
+   "db/seeds/0001_trap_taxonomy_seed.sql",
+   "db/seeds/0002_recipes_seed.sql",
+   "docs/patches/CONTENT_DIFFICULTY_CALIBRATION_V1.md",
+   "data/supplemental_taxonomy/AR_TAX_BP_0005.json"
+  ],
+  "no_source_consulted": "No source question surface (original_bank, june2007, pt86, or any other LSAT item) was opened, read, or consulted in drafting. No bank item prose was examined.",
+  "responsible_human_acceptance": "ACCEPTED - operator (Ben), 2026-07-16, docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-3"
+ },
+ "drafter_self_qa": {
+  "disclosed": "Drafter self-QA is NOT blind (author context); it satisfies no D2 evidence requirement.",
+  "stimulus_wordcount": 49,
+  "moving_parts_claimed": 3,
+  "expected_blind_solve_survivors": [
+   "B"
+  ]
+ },
+ "adjudication_ref": "adjudication_record_v1.json",
+ "difficulty_evidence_limitation": "See adjudication_record_v1.json: provisional expert calibration; empirical confirmation after beta required; not psychometrically validated.",
+ "completed_human_stages": {
+  "A5": "ACCEPT (2026-07-16)",
+  "A6": "PASS (2026-07-16)",
+  "A7": "label retained (2026-07-16)"
+ },
+ "next_gates": [
+  "A8 reconciliation fold (operator instruction required)",
+  "A9 attestation",
+  "A10 refused"
+ ],
+ "adjudication": {
+  "a5": "ACCEPT",
+  "a6": "PASS",
+  "a7_label": 2,
+  "difficulty_status": "prepublication_expert_calibrated",
+  "finding": "no special finding required (named same-cell anchors)",
+  "limitations": "docs/patches/BLINDED_REVIEW_ADJUDICATION_V1.md#AD-6",
+  "record": "adjudication_records_v1.json"
+ },
+ "remaining_gates": {
+  "A8": "provenance recording at import (reconciliation ledger untouched by adjudication)",
+  "A9": "Spec 07 section 9 human attestation",
+  "A10": "publication refused pending Spec 07 approval + publication authorization + beta-assembly gates"
+ }
+}

@@ -1,0 +1,431 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://argument.recipes/schemas/generated_items_schema.json",
+  "title": "Argument Recipes Generated Item Canonical Row",
+  "type": "object",
+  "required": [
+    "canonical_id",
+    "blueprint_id",
+    "source_question_number",
+    "source_bank",
+    "source_usage_count",
+    "generated_variant_number",
+    "content_state",
+    "publication_state",
+    "validation_status",
+    "question_type",
+    "difficulty",
+    "normalized_recipe_id",
+    "normalized_pattern_id",
+    "recipe_title",
+    "scenario",
+    "stimulus",
+    "question_stem",
+    "choice_a",
+    "choice_b",
+    "choice_c",
+    "choice_d",
+    "choice_e",
+    "correct_answer",
+    "prediction_text",
+    "correct_answer_job",
+    "conclusion",
+    "support",
+    "gap",
+    "inference_or_resolution",
+    "recipe_tags",
+    "trap_a",
+    "trap_b",
+    "trap_c",
+    "trap_d",
+    "trap_e",
+    "trap_family_a",
+    "trap_family_b",
+    "trap_family_c",
+    "trap_family_d",
+    "trap_family_e",
+    "explanation_a",
+    "explanation_b",
+    "explanation_c",
+    "explanation_d",
+    "explanation_e",
+    "diagnostic_eligible",
+    "daily_repair_eligible",
+    "targeted_drill_eligible",
+    "review_eligible",
+    "timed_eligible",
+    "near_copy_status",
+    "near_copy_note",
+    "originality_warning",
+    "version",
+    "version_state",
+    "generation_notes_internal",
+    "provenance_class",
+    "difficulty_status",
+    "provenance_metadata",
+    "provenance_attestation",
+    "provenance_evidence_refs",
+    "provenance_limitations"
+  ],
+  "properties": {
+    "canonical_id": {
+      "type": "string",
+      "pattern": "^(AR_V1_B\\d+|AR_TAX)_\\d{4}$"
+    },
+    "blueprint_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_question_number": {
+      "type": [
+        "string",
+        "integer"
+      ]
+    },
+    "source_bank": {
+      "type": "string"
+    },
+    "source_usage_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "generated_variant_number": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "content_state": {
+      "enum": [
+        "blueprint",
+        "playable_draft",
+        "playable_draft_hold",
+        "validated_candidate",
+        "validated"
+      ]
+    },
+    "publication_state": {
+      "enum": [
+        "unpublished",
+        "published",
+        "retired",
+        "superseded"
+      ]
+    },
+    "validation_status": {
+      "enum": [
+        "production_factory_pass_not_human_validated",
+        "needs_logic_repair",
+        "hold_minor_review",
+        "hold_surface_review",
+        "blueprint_needs_repair",
+        "source_decode_needs_review",
+        "human_gate_validated_not_published",
+        "blocked_missing_source",
+        "blocked_export_failure",
+        "blocked_schema_failure"
+      ]
+    },
+    "question_type": {
+      "enum": [
+        "FL",
+        "ST",
+        "WK",
+        "NA",
+        "SA",
+        "MBT",
+        "MSS",
+        "MC",
+        "MR",
+        "RC",
+        "PR",
+        "PA",
+        "PF",
+        "RP",
+        "EV",
+        "PI"
+      ]
+    },
+    "difficulty": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "normalized_recipe_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "normalized_pattern_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "recipe_title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scenario": {
+      "type": "string",
+      "minLength": 1
+    },
+    "stimulus": {
+      "type": "string",
+      "minLength": 1
+    },
+    "question_stem": {
+      "type": "string",
+      "minLength": 1
+    },
+    "choice_a": {
+      "type": "string",
+      "minLength": 1
+    },
+    "choice_b": {
+      "type": "string",
+      "minLength": 1
+    },
+    "choice_c": {
+      "type": "string",
+      "minLength": 1
+    },
+    "choice_d": {
+      "type": "string",
+      "minLength": 1
+    },
+    "choice_e": {
+      "type": "string",
+      "minLength": 1
+    },
+    "correct_answer": {
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ]
+    },
+    "prediction_text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "correct_answer_job": {
+      "type": "string",
+      "minLength": 1
+    },
+    "conclusion": {
+      "type": "string"
+    },
+    "support": {
+      "type": "string"
+    },
+    "gap": {
+      "type": "string"
+    },
+    "inference_or_resolution": {
+      "type": "string"
+    },
+    "recipe_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "trap_a": {
+      "type": "string",
+      "minLength": 1
+    },
+    "trap_b": {
+      "type": "string",
+      "minLength": 1
+    },
+    "trap_c": {
+      "type": "string",
+      "minLength": 1
+    },
+    "trap_d": {
+      "type": "string",
+      "minLength": 1
+    },
+    "trap_e": {
+      "type": "string",
+      "minLength": 1
+    },
+    "trap_family_a": {
+      "type": "string",
+      "minLength": 1
+    },
+    "trap_family_b": {
+      "type": "string",
+      "minLength": 1
+    },
+    "trap_family_c": {
+      "type": "string",
+      "minLength": 1
+    },
+    "trap_family_d": {
+      "type": "string",
+      "minLength": 1
+    },
+    "trap_family_e": {
+      "type": "string",
+      "minLength": 1
+    },
+    "explanation_a": {
+      "type": "string",
+      "minLength": 1
+    },
+    "explanation_b": {
+      "type": "string",
+      "minLength": 1
+    },
+    "explanation_c": {
+      "type": "string",
+      "minLength": 1
+    },
+    "explanation_d": {
+      "type": "string",
+      "minLength": 1
+    },
+    "explanation_e": {
+      "type": "string",
+      "minLength": 1
+    },
+    "diagnostic_eligible": {
+      "type": "boolean"
+    },
+    "daily_repair_eligible": {
+      "type": "boolean"
+    },
+    "targeted_drill_eligible": {
+      "type": "boolean"
+    },
+    "review_eligible": {
+      "type": "boolean"
+    },
+    "timed_eligible": {
+      "type": "boolean"
+    },
+    "near_copy_status": {
+      "enum": [
+        "pass",
+        "hold_surface_review"
+      ]
+    },
+    "near_copy_note": {
+      "type": "string"
+    },
+    "originality_warning": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^v[1-9][0-9]*$"
+    },
+    "version_state": {
+      "enum": [
+        "current",
+        "superseded",
+        "restored_candidate",
+        "retired"
+      ]
+    },
+    "generation_notes_internal": {
+      "type": "string"
+    },
+    "provenance_class": {
+      "enum": [
+        "direct_source_blueprint",
+        "multi_source_pattern",
+        "taxonomy_only",
+        "independently_authored"
+      ]
+    },
+    "difficulty_status": {
+      "enum": [
+        "prepublication_expert_calibrated",
+        "prepublication_expert_calibrated_one_sided"
+      ]
+    },
+    "provenance_metadata": {"type": "object", "minProperties": 1},
+    "provenance_attestation": {"type": "object", "minProperties": 1},
+    "provenance_evidence_refs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "provenance_limitations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 1}
+    }
+  },
+  "dependentRequired": {
+    "provenance_class": [
+      "difficulty_status",
+      "provenance_metadata",
+      "provenance_attestation",
+      "provenance_evidence_refs",
+      "provenance_limitations"
+    ],
+    "difficulty_status": ["provenance_class"],
+    "provenance_metadata": ["provenance_class"],
+    "provenance_attestation": ["provenance_class"],
+    "provenance_evidence_refs": ["provenance_class"],
+    "provenance_limitations": ["provenance_class"]
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "near_copy_status": {
+            "const": "hold_surface_review"
+          }
+        },
+        "required": [
+          "near_copy_status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "near_copy_note": {
+            "type": "string",
+            "minLength": 1
+          },
+          "originality_warning": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {"provenance_class": {"const": "taxonomy_only"}},
+        "required": ["provenance_class"]
+      },
+      "then": {
+        "properties": {
+          "source_question_number": {"const": ""},
+          "source_bank": {"const": ""},
+          "provenance_metadata": {
+            "$ref": "provenance_record_schema.json#/$defs/taxonomyProvenanceMetadata"
+          },
+          "provenance_attestation": {
+            "$ref": "provenance_record_schema.json#/$defs/taxonomyProvenanceAttestation"
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "source_question_number": {
+            "anyOf": [
+              {"type": "integer"},
+              {"type": "string", "minLength": 1}
+            ]
+          },
+          "source_bank": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Learning Queue Row",
+  "type": "object",
+  "required": [
+    "queue_id",
+    "user_id",
+    "queue_type",
+    "canonical_id",
+    "content_version",
+    "priority_score",
+    "due_at",
+    "reason_code",
+    "status",
+    "created_by_policy"
+  ],
+  "properties": {
+    "queue_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "user_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "queue_type": {
+      "enum": [
+        "daily_repair",
+        "targeted_drill",
+        "missed_trap_review",
+        "spaced_review"
+      ]
+    },
+    "canonical_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "content_version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "priority_score": {
+      "type": "number"
+    },
+    "due_at": {
+      "type": "string"
+    },
+    "reason_code": {
+      "type": "string",
+      "enum": [
+        "missed_trap",
+        "low_recipe_mastery",
+        "warmup",
+        "diagnostic_gap",
+        "recent_error"
+      ]
+    },
+    "status": {
+      "enum": [
+        "queued",
+        "served",
+        "skipped",
+        "expired",
+        "completed"
+      ]
+    },
+    "created_by_policy": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Normalized Blueprint Row",
+  "type": "object",
+  "required": [
+    "blueprint_id",
+    "source_question_number",
+    "normalized_recipe_id",
+    "normalized_recipe_title",
+    "normalized_pattern_id",
+    "generation_readiness",
+    "recommended_generation_batch",
+    "generation_priority_rank",
+    "source_usage_count",
+    "max_recommended_variants",
+    "normalization_notes"
+  ],
+  "properties": {
+    "blueprint_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_question_number": {
+      "type": [
+        "string",
+        "integer"
+      ]
+    },
+    "normalized_recipe_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "normalized_recipe_title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "normalized_pattern_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "generation_readiness": {
+      "enum": [
+        "generation_ready",
+        "needs_blueprint_repair",
+        "hold_for_later",
+        "unsafe_to_generate"
+      ]
+    },
+    "recommended_generation_batch": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "generation_priority_rank": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "source_usage_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "max_recommended_variants": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "normalization_notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

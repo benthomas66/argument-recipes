@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Item Selected Event",
+  "description": "Spec 04 §18 per-selection log. Every adaptive selection emits one of these; component_scores fully explains the choice (ADAPTIVE_SCORING_V1). Authored per PHASE_07_CONFORMANCE_V1 D7-4; the factory's batch_selection_log_schema.json is off-limits to app code (it carries source_question_number).",
+  "type": "object",
+  "required": [
+    "session_id",
+    "canonical_id",
+    "item_order",
+    "adaptive_item_score",
+    "component_scores",
+    "selection_reason",
+    "fallback_used"
+  ],
+  "properties": {
+    "session_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "canonical_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "item_order": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "adaptive_item_score": {
+      "type": "number"
+    },
+    "component_scores": {
+      "type": "object",
+      "required": [
+        "target_match",
+        "mastery_need",
+        "due_review",
+        "difficulty_fit",
+        "freshness",
+        "coverage_balance",
+        "surface_variety",
+        "eligibility_quality"
+      ],
+      "properties": {
+        "target_match": { "type": "number", "minimum": 0, "maximum": 1 },
+        "mastery_need": { "type": "number", "minimum": 0, "maximum": 1 },
+        "due_review": { "type": "number", "minimum": 0, "maximum": 1 },
+        "difficulty_fit": { "type": "number", "minimum": 0, "maximum": 1 },
+        "freshness": { "type": "number", "minimum": 0, "maximum": 1 },
+        "coverage_balance": { "type": "number", "minimum": 0, "maximum": 1 },
+        "surface_variety": { "type": "number", "minimum": 0, "maximum": 1 },
+        "eligibility_quality": { "type": "number", "minimum": 0, "maximum": 1 }
+      },
+      "additionalProperties": false
+    },
+    "selection_reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "fallback_used": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}

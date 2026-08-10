@@ -1,0 +1,189 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://argument.recipes/schemas/provenance_record_schema.json",
+  "title": "Content Provenance Record",
+  "$defs": {
+    "taxonomyBasis": {
+      "type": "object",
+      "required": ["recipe_id", "recipe_seed_row", "trap_rows"],
+      "properties": {
+        "recipe_id": {"type": "string", "minLength": 1},
+        "recipe_seed_row": {"type": "string", "minLength": 1},
+        "trap_rows": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        }
+      },
+      "additionalProperties": false
+    },
+    "taxonomyProvenanceMetadata": {
+      "type": "object",
+      "required": [
+        "blueprint_id",
+        "taxonomy_basis",
+        "source_isolation_confirmation",
+        "responsible_human",
+        "ai_assistance",
+        "uid_resolution",
+        "resolved_source_uid",
+        "item_content_version"
+      ],
+      "properties": {
+        "blueprint_id": {"type": "string", "minLength": 1},
+        "taxonomy_basis": {"$ref": "#/$defs/taxonomyBasis"},
+        "source_isolation_confirmation": {"type": "string", "minLength": 1},
+        "responsible_human": {"type": "string", "minLength": 1},
+        "ai_assistance": {
+          "type": "object",
+          "required": ["disclosed", "drafter", "stages"],
+          "properties": {
+            "disclosed": {"const": true},
+            "drafter": {"type": "string", "minLength": 1},
+            "stages": {"type": "string", "minLength": 1}
+          },
+          "additionalProperties": false
+        },
+        "uid_resolution": {"const": "not_applicable_no_source"},
+        "resolved_source_uid": {"type": "null"},
+        "item_content_version": {
+          "type": "object",
+          "required": [
+            "accepted_at_repo_version",
+            "authored_at_repo_version",
+            "content_state",
+            "item_file_sha256"
+          ],
+          "properties": {
+            "accepted_at_repo_version": {"type": "string", "minLength": 1},
+            "authored_at_repo_version": {"type": "string", "minLength": 1},
+            "content_state": {"type": "string", "minLength": 1},
+            "item_file_sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "taxonomyProvenanceAttestation": {
+      "type": "object",
+      "required": [
+        "canonical_id",
+        "content_version",
+        "decision",
+        "immutability",
+        "notes",
+        "provenance_class",
+        "recognizability_finding_adopted",
+        "reviewed_at",
+        "reviewer_id",
+        "reviewer_relationship",
+        "sibling_divergence_adopted",
+        "siblings_considered",
+        "source_isolation_finding_adopted",
+        "source_reference_absent",
+        "surface_distance_finding",
+        "taxonomy_basis_adopted"
+      ],
+      "properties": {
+        "canonical_id": {"type": "string", "minLength": 1},
+        "content_version": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "item_content_version": {"type": "integer", "minimum": 1},
+        "item_file_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "decision": {
+          "enum": ["attested_original", "hold_surface_review", "reject_derivative"]
+        },
+        "immutability": {"type": "string", "minLength": 1},
+        "notes": {"type": "string", "minLength": 1},
+        "provenance_class": {"const": "taxonomy_only"},
+        "recognizability_finding_adopted": {"type": "string", "minLength": 1},
+        "reviewed_at": {"type": "string", "format": "date-time"},
+        "reviewer_id": {"type": "string", "minLength": 1},
+        "reviewer_relationship": {
+          "enum": ["separated_self_review", "independent_reviewer"]
+        },
+        "sibling_divergence_adopted": {
+          "type": "object",
+          "required": ["adopted", "max_similarity_this_item", "note"],
+          "properties": {
+            "adopted": {"type": "string", "minLength": 1},
+            "max_similarity_this_item": {"type": "number", "minimum": 0, "maximum": 1},
+            "note": {"type": "string", "minLength": 1}
+          },
+          "additionalProperties": false
+        },
+        "siblings_considered": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "source_isolation_finding_adopted": {"type": "string", "minLength": 1},
+        "source_reference_absent": {"type": "string", "minLength": 1},
+        "surface_distance_finding": {"type": "string", "minLength": 1},
+        "taxonomy_basis_adopted": {"$ref": "#/$defs/taxonomyBasis"}
+      },
+      "additionalProperties": false,
+      "dependentRequired": {
+        "item_content_version": ["item_file_sha256"],
+        "item_file_sha256": ["item_content_version"]
+      }
+    }
+  },
+  "type": "object",
+  "required": [
+    "provenance_class",
+    "difficulty_status",
+    "provenance_metadata",
+    "provenance_attestation",
+    "provenance_evidence_refs",
+    "provenance_limitations"
+  ],
+  "properties": {
+    "provenance_class": {
+      "enum": [
+        "direct_source_blueprint",
+        "multi_source_pattern",
+        "taxonomy_only",
+        "independently_authored"
+      ]
+    },
+    "difficulty_status": {
+      "enum": [
+        "prepublication_expert_calibrated",
+        "prepublication_expert_calibrated_one_sided"
+      ]
+    },
+    "provenance_metadata": {"type": "object", "minProperties": 1},
+    "provenance_attestation": {"type": "object", "minProperties": 1},
+    "provenance_evidence_refs": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "provenance_limitations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 1}
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {"provenance_class": {"const": "taxonomy_only"}},
+        "required": ["provenance_class"]
+      },
+      "then": {
+        "properties": {
+          "provenance_metadata": {"$ref": "#/$defs/taxonomyProvenanceMetadata"},
+          "provenance_attestation": {"$ref": "#/$defs/taxonomyProvenanceAttestation"}
+        }
+      }
+    }
+  ],
+  "additionalProperties": false
+}

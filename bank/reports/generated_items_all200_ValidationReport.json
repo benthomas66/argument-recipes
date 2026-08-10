@@ -1,0 +1,1434 @@
+{
+  "spec_version": "1.3.1",
+  "run_id": "AR_V1_FULL200_20260708T014500Z_c7d41a2b",
+  "batch_number": 1,
+  "source_bank_hash": "40d35fd63ce38209455b389b18e52010d54ff7dcf4c9dc81e48a664d30288974",
+  "output_prefix": "generated_items_all200",
+  "row_count_expected": 200,
+  "row_count_actual": 200,
+  "unused_planned_ids": [],
+  "schema_validation_pass": false,
+  "answer_distribution_pass": true,
+  "explanation_alignment_pass": true,
+  "trap_alignment_pass": true,
+  "status_permission_pass": true,
+  "status_authority_pass": true,
+  "id_range_pass": false,
+  "manifest_alignment_pass": false,
+  "source_safety_pass": true,
+  "source_safety_notes": "Run validate_source_safety.py on exportable artifacts for full source-safety scan.",
+  "near_copy_status_pass": true,
+  "workbook_csv_parity_pass": true,
+  "import_package_pass": true,
+  "blocking_failures": [
+    {
+      "code": "MANIFEST_SCHEMA_FAILURE",
+      "message": "'AR_V1_FULL200_20260708T014500Z_c7d41a2b' does not match '^AR_V1_B\\\\d{2,}_\\\\d{8}T\\\\d{6}Z_[a-f0-9]{8}$'",
+      "severity": "blocking",
+      "path": "../../data/runs/AR_V1_FULL200_20260708T014500Z_c7d41a2b/consolidated/manifest/run_manifest.json",
+      "row": null
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B1_0001 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 2
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B1_0002 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 3
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B1_0003 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 4
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B1_0004 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 5
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B1_0005 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 6
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B1_0006 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 7
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B1_0007 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 8
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B1_0008 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 9
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B1_0009 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 10
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B1_0010 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 11
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B1_0011 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 12
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B1_0012 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 13
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B1_0013 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 14
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B1_0014 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 15
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B1_0015 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 16
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B1_0016 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 17
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B1_0017 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 18
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B1_0018 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 19
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B1_0019 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 20
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B1_0020 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 21
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B2_0001 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 22
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B2_0002 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 23
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B2_0003 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 24
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B2_0004 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 25
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B2_0005 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 26
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B2_0006 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 27
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B2_0007 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 28
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B2_0008 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 29
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B2_0009 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 30
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B2_0010 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 31
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B2_0011 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 32
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B2_0012 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 33
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B2_0013 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 34
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B2_0014 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 35
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B2_0015 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 36
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B2_0016 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 37
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B2_0017 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 38
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B2_0018 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 39
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B2_0019 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 40
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B2_0020 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 41
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B3_0001 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 42
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B3_0002 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 43
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B3_0003 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 44
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B3_0004 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 45
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B3_0005 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 46
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B3_0006 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 47
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B3_0007 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 48
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B3_0008 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 49
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B3_0009 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 50
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B3_0010 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 51
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B3_0011 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 52
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B3_0012 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 53
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B3_0013 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 54
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B3_0014 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 55
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B3_0015 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 56
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B3_0016 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 57
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B3_0017 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 58
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B3_0018 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 59
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B3_0019 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 60
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B3_0020 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 61
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B4_0001 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 62
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B4_0002 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 63
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B4_0003 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 64
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B4_0004 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 65
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B4_0005 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 66
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B4_0006 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 67
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B4_0007 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 68
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B4_0008 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 69
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B4_0009 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 70
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B4_0010 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 71
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B4_0011 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 72
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B4_0012 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 73
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B4_0013 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 74
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B4_0014 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 75
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B4_0015 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 76
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B4_0016 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 77
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B4_0017 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 78
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B4_0018 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 79
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B4_0019 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 80
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B4_0020 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 81
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B5_0001 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 82
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B5_0002 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 83
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B5_0003 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 84
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B5_0004 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 85
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B5_0005 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 86
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B5_0006 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 87
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B5_0007 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 88
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B5_0008 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 89
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B5_0009 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 90
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B5_0010 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 91
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B5_0011 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 92
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B5_0012 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 93
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B5_0013 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 94
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B5_0014 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 95
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B5_0015 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 96
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B5_0016 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 97
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B5_0017 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 98
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B5_0018 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 99
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B5_0019 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 100
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B5_0020 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 101
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B6_0001 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 102
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B6_0002 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 103
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B6_0003 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 104
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B6_0004 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 105
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B6_0005 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 106
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B6_0006 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 107
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B6_0007 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 108
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B6_0008 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 109
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B6_0009 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 110
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B6_0010 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 111
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B6_0011 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 112
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B6_0012 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 113
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B6_0013 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 114
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B6_0014 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 115
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B6_0015 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 116
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B6_0016 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 117
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B6_0017 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 118
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B6_0018 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 119
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B6_0019 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 120
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B6_0020 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 121
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B7_0001 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 122
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B7_0002 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 123
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B7_0003 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 124
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B7_0004 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 125
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B7_0005 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 126
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B7_0006 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 127
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B7_0007 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 128
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B7_0008 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 129
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B7_0009 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 130
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B7_0010 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 131
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B7_0011 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 132
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B7_0012 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 133
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B7_0013 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 134
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B7_0014 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 135
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B7_0015 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 136
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B7_0016 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 137
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B7_0017 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 138
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B7_0018 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 139
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B7_0019 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 140
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B7_0020 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 141
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B8_0001 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 142
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B8_0002 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 143
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B8_0003 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 144
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B8_0004 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 145
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B8_0005 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 146
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B8_0006 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 147
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B8_0007 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 148
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B8_0008 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 149
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B8_0009 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 150
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B8_0010 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 151
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B8_0011 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 152
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B8_0012 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 153
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B8_0013 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 154
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B8_0014 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 155
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B8_0015 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 156
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B8_0016 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 157
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B8_0017 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 158
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B8_0018 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 159
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B8_0019 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 160
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B8_0020 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 161
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B9_0001 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 162
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B9_0002 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 163
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B9_0003 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 164
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B9_0004 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 165
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B9_0005 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 166
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B9_0006 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 167
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B9_0007 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 168
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B9_0008 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 169
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B9_0009 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 170
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B9_0010 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 171
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B9_0011 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 172
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B9_0012 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 173
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B9_0013 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 174
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B9_0014 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 175
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B9_0015 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 176
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B9_0016 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 177
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B9_0017 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 178
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B9_0018 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 179
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B9_0019 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 180
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B9_0020 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 181
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B10_0001 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 182
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B10_0002 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 183
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B10_0003 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 184
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B10_0004 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 185
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B10_0005 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 186
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B10_0006 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 187
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B10_0007 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 188
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B10_0008 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 189
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B10_0009 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 190
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B10_0010 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 191
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B10_0011 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 192
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B10_0012 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 193
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B10_0013 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 194
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B10_0014 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 195
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B10_0015 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 196
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B10_0016 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 197
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B10_0017 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 198
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B10_0018 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 199
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B10_0019 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 200
+    },
+    {
+      "code": "CANONICAL_ID_OUT_OF_RANGE",
+      "message": "AR_V1_B10_0020 outside manifest range AR_V1_B1_0001-AR_V1_B10_0020",
+      "severity": "blocking",
+      "path": "",
+      "row": 201
+    }
+  ],
+  "recoverable_holds": [],
+  "validation_notes": "Generated item package validation complete."
+}

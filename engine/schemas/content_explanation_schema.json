@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Content Explanation",
+  "description": "Spec 03 §7.3. Carries trap_label (free-text metadata) and trap_family (taxonomy/mastery grain) per TRAP_GRAIN_V1.",
+  "type": "object",
+  "required": [
+    "canonical_id",
+    "content_version",
+    "choice_letter",
+    "explanation_text",
+    "explanation_role",
+    "trap_label",
+    "trap_family"
+  ],
+  "properties": {
+    "canonical_id": { "type": "string", "minLength": 1 },
+    "content_version": { "type": "integer", "minimum": 1 },
+    "choice_letter": { "enum": ["A", "B", "C", "D", "E"] },
+    "explanation_text": { "type": "string", "minLength": 1 },
+    "explanation_role": { "enum": ["correct", "wrong"] },
+    "trap_label": { "type": "string", "minLength": 1 },
+    "trap_family": { "type": "string", "minLength": 1 }
+  },
+  "additionalProperties": false
+}
